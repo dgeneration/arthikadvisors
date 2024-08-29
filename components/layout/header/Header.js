@@ -47,15 +47,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearc
                                         <div className="navbar-wrap main-menu d-none d-lg-flex">
                                             <ul className="navigation">
                                                 <li className="active"><Link href="/">Home</Link></li>
-                                                <li className="menu-item-has-children"><Link href="#">About Us</Link>
-                                                    <ul className="sub-menu">
-                                                        <li><Link href="/about">About One</Link></li>
-                                                        <li><Link href="/about-2">About Two</Link></li>
-                                                        <li><Link href="/about-3">About Three</Link></li>
-                                                        <li><Link href="/about-4">About Four</Link></li>
-                                                        <li><Link href="/about-5">About Five</Link></li>
-                                                    </ul>
-                                                </li>
+                                                <li className=""><Link href="#">About Us</Link></li>
                                                 <li className="menu-item-has-children"><Link href="#">Pages</Link>
                                                     <ul className="sub-menu">
                                                         <li className="menu-item-has-children"><Link href="/services">Services</Link>
