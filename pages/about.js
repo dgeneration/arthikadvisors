@@ -68,7 +68,7 @@ export default function About() {
                                 <div className="col-xl-5 col-lg-6">
                                     <div className="section-title text-center mb-50">
                                         <span className="sub-title">Our Values</span>
-                                        <h2 className="title">Amazing Features For Business Solutions</h2>
+                                        <h2 className="title">Strategic Insights for Your Success</h2>
                                     </div>
                                 </div>
                             </div>
