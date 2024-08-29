@@ -28,9 +28,9 @@ export default function About() {
                                     <div className="about-content-seven">
                                         <div className="section-title mb-30">
                                             <span className="sub-title">Who We are</span>
-                                            <h2 className="title">Innovative Business Solutions For Success Company</h2>
+                                            <h2 className="title">Arthik Advisors India Private Limited</h2>
                                         </div>
-                                        <p>Morem ipsum dolor sit amet, consectetur adipiscing elita florai psum dolor sit amet consecteture Borem ipsum dolor sitter consectetur adipiscing elita florai psum.</p>
+                                        <p>Founded in 2018, Arthik Advisors India Private Limited is committed to providing exceptional consulting services that drive business success. Operating from our registered office in Haldwani, Uttarakhand, and our corporate address in Rudrapur, Udham Singh Nagar, we are strategically positioned to serve clients across India with a focus on delivering high-quality, tailored solutions.</p>
                                         <div className="success-wrap-two">
                                             <ul className="list-wrap">
                                                 <li>
@@ -38,8 +38,8 @@ export default function About() {
                                                         <i className="flaticon-investment" />
                                                     </div>
                                                     <div className="content">
-                                                        <h2 className="count"><CounterUp count={152} />K</h2>
-                                                        <p>Total revenue</p>
+                                                        <h2 className="count"><CounterUp count={5} />K</h2>
+                                                        <p>Total Clients</p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -47,13 +47,13 @@ export default function About() {
                                                         <i className="flaticon-business-presentation" />
                                                     </div>
                                                     <div className="content">
-                                                        <h2 className="count"><CounterUp count={95} />%</h2>
-                                                        <p>Increase in sales</p>
+                                                        <h2 className="count"><CounterUp count={25} /></h2>
+                                                        <p>Team Strenght</p>
                                                     </div>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <p className="info-two">Morem ipsum dolor sit amet, consectetur adipiscing elita florai psum dolor sit amet, consecteture. consecteture.Borem ipsum dolor sit amectetur adipiscing.</p>
+                                        <p className="info-two"></p>
                                         <Link href="/contact" className="btn btn-three">Contact With Us</Link>
                                     </div>
                                 </div>
@@ -67,7 +67,7 @@ export default function About() {
                             <div className="row justify-content-center">
                                 <div className="col-xl-5 col-lg-6">
                                     <div className="section-title text-center mb-50">
-                                        <span className="sub-title">Core Features</span>
+                                        <span className="sub-title">Our Values</span>
                                         <h2 className="title">Amazing Features For Business Solutions</h2>
                                     </div>
                                 </div>
@@ -80,9 +80,9 @@ export default function About() {
                                                 <div className="icon">
                                                     <i className="flaticon-puzzle-piece" />
                                                 </div>
-                                                <h2 className="title">Quality Services</h2>
+                                                <h2 className="title">Integrity</h2>
                                             </div>
-                                            <p>eiusmod temporincididunt ut labore magna aliqua Quisery.</p>
+                                            <p>We uphold the highest standards of honesty and transparency in all our interactions.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -93,9 +93,9 @@ export default function About() {
                                                 <div className="icon">
                                                     <i className="flaticon-inspiration" />
                                                 </div>
-                                                <h2 className="title">Innovation Ideas</h2>
+                                                <h2 className="title">Excellence</h2>
                                             </div>
-                                            <p>eiusmod temporincididunt ut labore magna aliqua Quisery.</p>
+                                            <p>We are dedicated to delivering superior quality and value in every service we offer.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -106,9 +106,22 @@ export default function About() {
                                                 <div className="icon">
                                                     <i className="flaticon-profit" />
                                                 </div>
-                                                <h2 className="title">Business Growth</h2>
+                                                <h2 className="title">Client-Centricity</h2>
                                             </div>
-                                            <p>eiusmod temporincididunt ut labore magna aliqua Quisery.</p>
+                                            <p>Our clients’ needs and success are the focal points of our efforts.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4 col-md-6">
+                                    <div className="features-item">
+                                        <div className="features-content">
+                                            <div className="content-top">
+                                                <div className="icon">
+                                                    <i className="flaticon-profit" />
+                                                </div>
+                                                <h2 className="title">Innovation</h2>
+                                            </div>
+                                            <p>We embrace creative approaches to solving complex problems and driving growth.</p>
                                         </div>
                                     </div>
                                 </div>
