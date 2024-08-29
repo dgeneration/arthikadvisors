@@ -13,8 +13,8 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearc
                             <div className="col-lg-7">
                                 <div className="header-top-left">
                                     <ul className="list-wrap">
-                                        <li><i className="flaticon-location" />256 Avenue, Mark Street, Newyork City</li>
-                                        <li><i className="flaticon-mail" /><Link href="mailto:gerow@gmail.com">gerow@gmail.com</Link></li>
+                                        <li><i className="flaticon-location" />Indra Awas Colony, Haldwani, Uttarakhand, India, 263139</li>
+                                        <li><i className="flaticon-mail" /><Link href="mailto:info.arthik@gmail.com">info.arthik@gmail.com</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -51,6 +51,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearc
                                                 <li><Link href="/team-details">Team</Link></li>
                                                 <li className=""><Link href="/about">About Us</Link></li>
                                                 <li><Link href="/queries">Queries</Link></li>
+                                                {/*
                                                 <li className="menu-item-has-children"><Link href="#">Pages</Link>
                                                     <ul className="sub-menu">
                                                         <li className="menu-item-has-children"><Link href="/services-details">Services Details</Link>
@@ -67,13 +68,15 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearc
                                                         <li><Link href="/404">404 Error</Link></li>
                                                     </ul>
                                                 </li>
+                                                
                                                 <li className="menu-item-has-children"><Link href="#">Blog</Link>
                                                     <ul className="sub-menu">
                                                         <li><Link href="/blog">Our Blog</Link></li>
                                                         <li><Link href="/blog-details">Blog Details</Link></li>
                                                     </ul>
                                                 </li>
-                                                <li><Link href="/contact">contacts</Link></li>
+                                                */} 
+                                                <li><Link href="/contact">Contact Us</Link></li>
                                             </ul>
                                         </div>
                                         <div className="header-action">
@@ -83,8 +86,8 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearc
                                                         <i className="flaticon-phone-call" />
                                                     </div>
                                                     <div className="content">
-                                                        <span>Hot Line Number</span>
-                                                        <Link href="tel:0123456789">+123 8989 444</Link>
+                                                        <span>Phone Number</span>
+                                                        <Link href="tel:6396377079">+91-6396377079</Link>
                                                     </div>
                                                 </li>
                                                 <li className="header-search" onClick={handleSearch}><Link href="#"><i className="flaticon-search" /></Link></li>

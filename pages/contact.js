@@ -17,19 +17,19 @@ export default function Contact() {
                                     <div className="inner-contact-info">
                                         <h2 className="title">Our Office Address</h2>
                                         <div className="contact-info-item">
-                                            <h5 className="title-two">USA Office</h5>
+                                            <h5 className="title-two">Haldwani Office</h5>
                                             <ul className="list-wrap">
-                                                <li>100 Wilshire Blvd, Suite 700 Santa <br /> Monica, CA 90401, USA</li>
-                                                <li>+1 (310) 620-8565</li>
-                                                <li>info@gmail.com</li>
+                                                <li>Indra Awas Colony, Bly To Ntl Road, Halduchaur <br />  Haldwani, Nainital, Uttarakhand, India, 263139</li>
+                                                <li>+91-6396377079</li>
+                                                <li>info.arthik@gmail.com</li>
                                             </ul>
                                         </div>
                                         <div className="contact-info-item">
-                                            <h5 className="title-two">Australia Office</h5>
+                                            <h5 className="title-two">Rudrapur Office</h5>
                                             <ul className="list-wrap">
-                                                <li>100 Wilshire Blvd, Suite 700 Santa <br /> Monica, CA 90401, USA</li>
-                                                <li>+1 (310) 620-8565</li>
-                                                <li>info@gmail.com</li>
+                                                <li>D1D2, SRA-28, Kashipur Bypass Road <br /> Rudrapur, Udham Singh Nagar, Uttarakhand, 263153</li>
+                                                <li>+91-6396377079</li>
+                                                <li>info.arthik@gmail.com</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -38,7 +38,7 @@ export default function Contact() {
                         </div>
                     </section>
                     <div className="contact-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.332792000835!2d144.96011341744386!3d-37.805673299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sbd!4v1685027435635!5m2!1sen!2sbd" allowFullScreen loading="lazy" />
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3490.1788768718284!2d79.39547967616654!3d28.98206996812093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a07fe9384f6ac1%3A0x44c9c41ab5b216f3!2s28%2F1%2C%20Kashipur%20Bypass%20Rd%2C%20Doctors%20Colony%2C%20Rudrapur%2C%20Jagatpura%2C%20Uttarakhand%20263153!5e0!3m2!1sen!2sin!4v1724912772379!5m2!1sen!2sin" allowFullScreen loading="lazy" />
                     </div>
                 </div>
             </Layout>
