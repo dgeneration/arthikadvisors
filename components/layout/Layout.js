@@ -7,7 +7,7 @@ import PageHead from './PageHead'
 import Footer1 from './footer/Footer1'
 import Footer2 from './footer/Footer2'
 import Footer3 from "./footer/Footer3"
-import Header1 from "./header/Header1"
+import Header1 from "./header/Header"
 
 export const runtime = "edge";
 
