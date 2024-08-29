@@ -47,18 +47,12 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearc
                                         <div className="navbar-wrap main-menu d-none d-lg-flex">
                                             <ul className="navigation">
                                                 <li className="active"><Link href="/">Home</Link></li>
+                                                <li className=""><Link href="/services">Services</Link></li>
+                                                <li><Link href="/team-details">Team</Link></li>
                                                 <li className=""><Link href="/about">About Us</Link></li>
+                                                <li><Link href="/queries">Queries</Link></li>
                                                 <li className="menu-item-has-children"><Link href="#">Pages</Link>
                                                     <ul className="sub-menu">
-                                                        <li className="menu-item-has-children"><Link href="/services">Services</Link>
-                                                            <ul className="sub-menu">
-                                                                <li><Link href="/services">Services One</Link></li>
-                                                                <li><Link href="/services-2">Services Two</Link></li>
-                                                                <li><Link href="/services-3">Services Three</Link></li>
-                                                                <li><Link href="/services-4">Services Four</Link></li>
-                                                                <li><Link href="/services-5">Services Five</Link></li>
-                                                            </ul>
-                                                        </li>
                                                         <li className="menu-item-has-children"><Link href="/services-details">Services Details</Link>
                                                             <ul className="sub-menu">
                                                                 <li><Link href="/services-details">Services Details One</Link></li>
@@ -69,7 +63,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearc
                                                             </ul>
                                                         </li>
                                                         <li><Link href="/project-details">Portfolio Details</Link></li>
-                                                        <li><Link href="/team-details">Team Details</Link></li>
+                                                        <li><Link href="/team-details">Team</Link></li>
                                                         <li><Link href="/404">404 Error</Link></li>
                                                     </ul>
                                                 </li>
