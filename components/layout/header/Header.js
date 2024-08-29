@@ -7,7 +7,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearc
     return (
         <>
             <header id="sticky-header" className={`transparent-header header-style-two ${scroll? "sticky-menu":""}`}>
-                <div className="container custom-container">
+                <div className="container custom-container header-container">
                     <div className="heder-top-wrap">
                         <div className="row align-items-center">
                             <div className="col-lg-7">
@@ -36,7 +36,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearc
                         </div>
                     </div>
                     <div className="menu-area">
-                        <div className="row">
+                        <div className="row header-row">
                             <div className="col-12">
                                 <div className="mobile-nav-toggler" onClick={handleMobileMenu}><i className="fas fa-bars" /></div>
                                 <div className="menu-wrap">

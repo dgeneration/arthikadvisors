@@ -475,6 +475,13 @@ label {
 /*=============================
 	02. Header
 ===============================*/
+.header-container {
+    min-width: -webkit-fill-available;
+    padding: 0px;
+}
+.header-row {
+    margin: 0;
+}
 .custom-container {
     max-width: 1310px;
 }
