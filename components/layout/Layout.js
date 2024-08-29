@@ -8,11 +8,8 @@ import Footer1 from './footer/Footer1'
 import Footer2 from './footer/Footer2'
 import Footer3 from "./footer/Footer3"
 import Header1 from "./header/Header1"
-import Header2 from './header/Header2'
-import Header3 from "./header/Header3"
-import Header4 from "./header/Header4"
-import Header5 from "./header/Header5"
-import Header6 from "./header/Header6"
+
+export const runtime = "edge";
 
 export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children }) {
     const [scroll, setScroll] = useState(0)

@@ -46,15 +46,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSear
                                         </div>
                                         <div className="navbar-wrap main-menu d-none d-lg-flex">
                                             <ul className="navigation">
-                                                <li className="active menu-item-has-children"><Link href="#">Home</Link>
-                                                    <ul className="sub-menu">
-                                                        <li><Link href="/">Finance</Link></li>
-                                                        <li><Link href="/index-2">Consulting</Link></li>
-                                                        <li><Link href="/index-3">Insurance</Link></li>
-                                                        <li><Link href="/index-4">Digital Agency</Link></li>
-                                                        <li><Link href="/index-5">Business</Link></li>
-                                                    </ul>
-                                                </li>
+                                                <li className="active menu-item-has-children"><Link href="#">Home</Link></li>
                                                 <li className="menu-item-has-children"><Link href="#">About Us</Link>
                                                     <ul className="sub-menu">
                                                         <li><Link href="/about">About One</Link></li>
