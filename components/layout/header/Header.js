@@ -3,7 +3,7 @@ import MobileMenu from "../MobileMenu"
 import OffcanvusMenu from "../OffcanvusMenu"
 import SearchPopup from "../SearchPopup"
 
-export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSearch, handleSearch, isOffcanvus, handleOffcanvus }) {
+export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearch, handleSearch, isOffcanvus, handleOffcanvus }) {
     return (
         <>
             <header id="sticky-header" className={`transparent-header header-style-two ${scroll? "sticky-menu":""}`}>
@@ -46,7 +46,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSear
                                         </div>
                                         <div className="navbar-wrap main-menu d-none d-lg-flex">
                                             <ul className="navigation">
-                                                <li className="active"><Link href="#">Home</Link></li>
+                                                <li className="active"><Link href="/">Home</Link></li>
                                                 <li className="menu-item-has-children"><Link href="#">About Us</Link>
                                                     <ul className="sub-menu">
                                                         <li><Link href="/about">About One</Link></li>
