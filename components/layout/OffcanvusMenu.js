@@ -13,17 +13,15 @@ export default function OffcanvusMenu({ isOffcanvus, handleOffcanvus }) {
                 <div className="side-info mb-30">
                     <div className="contact-list mb-30">
                         <h4>Office Address</h4>
-                        <p>123/A, Miranda City Likaoli <br /> Prikano, Dope</p>
+                        <p>Indra Awas Colony, Bly To Ntl Road, Halduchaur <br />  Haldwani, Nainital, Uttarakhand, India, 263139</p>
                     </div>
                     <div className="contact-list mb-30">
                         <h4>Phone Number</h4>
-                        <p>+0989 7876 9865 9</p>
-                        <p>+(090) 8765 86543 85</p>
+                        <p>+91-6396377079</p>
                     </div>
                     <div className="contact-list mb-30">
                         <h4>Email Address</h4>
-                        <p>info@example.com</p>
-                        <p>example.mail@hum.com</p>
+                        <p>info.arthik@gmail.com</p>
                     </div>
                 </div>
                 <ul className="side-instagram list-wrap">

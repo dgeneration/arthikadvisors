@@ -18,7 +18,7 @@ export default function Footer() {
                                                         <i className="flaticon-pin" />
                                                     </div>
                                                     <div className="content">
-                                                        <p>58 Street Commercial Road Fratton, Australia</p>
+                                                        <p>Indra Awas Colony, Haldwani, Uttarakhand, India, 263139</p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -26,7 +26,7 @@ export default function Footer() {
                                                         <i className="flaticon-phone-call" />
                                                     </div>
                                                     <div className="content">
-                                                        <Link href="tel:0123456789">+123 888 9999</Link>
+                                                        <Link href="tel:6396377079">+91-6396377079</Link>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -92,7 +92,7 @@ export default function Footer() {
                                             <Link href="/"><img src="/assets/img/logo/w_logo.png" alt="" /></Link>
                                         </div>
                                         <div className="copyright-text">
-                                            <p>Copyright © gerow | All Right Reserved</p>
+                                            <p>Copyright © RolexDev | All Right Reserved</p>
                                         </div>
                                     </div>
                                 </div>
