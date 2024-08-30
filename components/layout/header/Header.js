@@ -1,12 +1,17 @@
-import Link from "next/link"
-import MobileMenu from "../MobileMenu"
-import OffcanvusMenu from "../OffcanvusMenu"
-import SearchPopup from "../SearchPopup"
+import Link from "next/link";
+import { useRouter } from "next/router";
+import MobileMenu from "../MobileMenu";
+import OffcanvusMenu from "../OffcanvusMenu";
+import SearchPopup from "../SearchPopup";
 
 export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearch, handleSearch, isOffcanvus, handleOffcanvus }) {
+    const router = useRouter();
+
+    const isActive = (pathname) => router.pathname === pathname;
+
     return (
         <>
-            <header id="sticky-header" className={`transparent-header header-style-two ${scroll? "sticky-menu":""}`}>
+            <header id="sticky-header" className={`transparent-header header-style-two ${scroll ? "sticky-menu" : ""}`}>
                 <div className="container custom-container header-container">
                     <div className="heder-top-wrap">
                         <div className="row align-items-center">
@@ -46,37 +51,12 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearc
                                         </div>
                                         <div className="navbar-wrap main-menu d-none d-lg-flex">
                                             <ul className="navigation">
-                                                <li className="active"><Link href="/">Home</Link></li>
-                                                <li className=""><Link href="/services">Services</Link></li>
-                                                <li><Link href="/team-details">Team</Link></li>
-                                                <li className=""><Link href="/about">About Us</Link></li>
-                                                <li><Link href="/queries">Queries</Link></li>
-                                                {/*
-                                                <li className="menu-item-has-children"><Link href="#">Pages</Link>
-                                                    <ul className="sub-menu">
-                                                        <li className="menu-item-has-children"><Link href="/services-details">Services Details</Link>
-                                                            <ul className="sub-menu">
-                                                                <li><Link href="/services-details">Services Details One</Link></li>
-                                                                <li><Link href="/services-details-2">Services Details Two</Link></li>
-                                                                <li><Link href="/services-details-3">Services Details Three</Link></li>
-                                                                <li><Link href="/services-details-4">Services Details Four</Link></li>
-                                                                <li><Link href="/services-details-5">Services Details Five</Link></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li><Link href="/project-details">Portfolio Details</Link></li>
-                                                        <li><Link href="/team-details">Team</Link></li>
-                                                        <li><Link href="/404">404 Error</Link></li>
-                                                    </ul>
-                                                </li>
-                                                
-                                                <li className="menu-item-has-children"><Link href="#">Blog</Link>
-                                                    <ul className="sub-menu">
-                                                        <li><Link href="/blog">Our Blog</Link></li>
-                                                        <li><Link href="/blog-details">Blog Details</Link></li>
-                                                    </ul>
-                                                </li>
-                                                */} 
-                                                <li><Link href="/contact">Contact Us</Link></li>
+                                                <li className={isActive("/") ? "active" : ""}><Link href="/">Home</Link></li>
+                                                <li className={isActive("/services") ? "active" : ""}><Link href="/services">Services</Link></li>
+                                                <li className={isActive("/team-details") ? "active" : ""}><Link href="/team-details">Team</Link></li>
+                                                <li className={isActive("/about") ? "active" : ""}><Link href="/about">About Us</Link></li>
+                                                <li className={isActive("/queries") ? "active" : ""}><Link href="/queries">Queries</Link></li>
+                                                <li className={isActive("/contact") ? "active" : ""}><Link href="/contact">Contact Us</Link></li>
                                             </ul>
                                         </div>
                                         <div className="header-action">
@@ -137,8 +117,6 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearc
                 <SearchPopup isSearch={isSearch} handleSearch={handleSearch} />
                 <OffcanvusMenu isOffcanvus={isOffcanvus} handleOffcanvus={handleOffcanvus} />
             </header>
-
-
         </>
-    )
+    );
 }
