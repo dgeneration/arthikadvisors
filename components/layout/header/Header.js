@@ -34,7 +34,7 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearc
                                         </ul>
                                     </div>
                                     <div className="header-top-btn">
-                                        <Link href="/contact"><i className="flaticon-briefcase" />Free Consulting</Link>
+                                        <Link href="/contact"><i className="flaticon-briefcase" />Request Services</Link>
                                     </div>
                                 </div>
                             </div>
