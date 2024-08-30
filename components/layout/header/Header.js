@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
-import MobileMenu from "../MobileMenu";
-import OffcanvusMenu from "../OffcanvusMenu";
-import SearchPopup from "../SearchPopup";
+import Link from "next/link"
+import { useRouter } from "next/router"
+import MobileMenu from "../MobileMenu"
+import OffcanvusMenu from "../OffcanvusMenu"
+import SearchPopup from "../SearchPopup"
 
 export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearch, handleSearch, isOffcanvus, handleOffcanvus }) {
     const router = useRouter();
