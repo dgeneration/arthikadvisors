@@ -9862,3 +9862,34 @@ label {
     border-radius: 8px;
     background-color: transparent;
 }
+
+.queries-section {
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    grid-template-columns: 90%;
+    display: grid;
+    column-gap: 10px;
+}
+.queries-outer-div {
+    width: 600px;
+    min-height: 600px;
+    margin: auto;
+}
+
+.queries-form-div-section {
+    margin-bottom: 10px;
+}
+.queries-form-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.queries-form-label {
+    font-size: xx-small;
+}
+
+.queries-form-input-div {
+    display: grid;
+}
