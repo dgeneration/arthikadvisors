@@ -9893,3 +9893,59 @@ label {
 .queries-form-input-div {
     display: grid;
 }
+
+.queries-form-input {
+    font-size: smaller;
+    height: 25px;
+    width: 100%;
+}
+
+.queries-form-one-grid {
+    grid-template-columns: 1fr !important;
+}
+
+.queries-form-large-input {
+    max-height: max-content !important;
+    min-height: 100px;
+}
+.queries-form-term-checkbox {
+    width: max-content;
+}
+.queries-form-term-div {
+    grid-template-columns: auto 1fr;
+    column-gap: 5px;
+}
+
+.queries-form-upload-div {
+    border-width: 1px;
+    border-style: inset;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding: 3px;
+}
+
+input::file-selector-button{
+    user-select: none;
+    -moz-user-select: none;
+    background: var(--tg-primary-color) none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 30px;
+    color: var(--tg-white);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: 0;
+    position: relative;
+    z-index: 1;
+}
