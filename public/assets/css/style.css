@@ -9949,3 +9949,25 @@ input::file-selector-button{
     position: relative;
     z-index: 1;
 }
+
+.small-btn {
+    padding: 15px 15px 15px 22px !important;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    font-size: small;
+}
+
+.back-button::before {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: small;
+    margin-right: 15px;
+}
+
+.div-hide {
+    display: none;
+}
