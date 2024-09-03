@@ -89,8 +89,8 @@ export default function Carrers() {
                         <div className="row align-items-center">
                             <div className="col-56">
                                 <div className="content">
-                                    <h4 className="">Benefits</h4>
-                                    <p> </p>
+                                    <h4 className="">Join Our Team</h4>
+                                    <p> We are always on the lookout for talented individuals who are passionate about making a difference. If you are interested in pursuing a career with us, we encourage you to explore the opportunities available and apply.</p>
                                     <ul className="list-wrap">
                                         <li><img src="/assets/img/icons/check_icon.svg" alt="" />Clear strategic direction and vision</li>
                                         <li><img src="/assets/img/icons/check_icon.svg" alt="" />Improved resource allocation and efficiency</li>
