@@ -49,8 +49,8 @@ export default function Services() {
                                     <div className="icon">
                                         <i className="flaticon-piggy-bank" />
                                     </div>
-                                    <h2 className="title"><Link href="/services-details">Finance Planning</Link></h2>
-                                    <p style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>Morem ipsum dolor ametey consectre adipiscing.</p>
+                                    <h2 className="title"><Link href="/services-details">Finance & Accounting</Link></h2>
+                                    <p style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}></p>
                                 </div>
                             </div>
                         </div>
@@ -66,8 +66,8 @@ export default function Services() {
                                     <div className="icon">
                                         <i className="flaticon-calculator" />
                                     </div>
-                                    <h2 className="title"><Link href="/services-details">Tax File Audit</Link></h2>
-                                    <p style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>Morem ipsum dolor ametey consectre adipiscing.</p>
+                                    <h2 className="title"><Link href="/services-details">Management Consulting</Link></h2>
+                                    <p style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}></p>
                                 </div>
                             </div>
                         </div>
@@ -83,8 +83,8 @@ export default function Services() {
                                     <div className="icon">
                                         <i className="flaticon-money" />
                                     </div>
-                                    <h2 className="title"><Link href="/services-details">Investment Idea</Link></h2>
-                                    <p style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>Morem ipsum dolor ametey consectre adipiscing.</p>
+                                    <h2 className="title"><Link href="/services-details">Incorporation & Registration</Link></h2>
+                                    <p style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}></p>
                                 </div>
                             </div>
                         </div>
@@ -100,8 +100,8 @@ export default function Services() {
                                     <div className="icon">
                                         <i className="flaticon-layers" />
                                     </div>
-                                    <h2 className="title"><Link href="/services-details">Risk Management</Link></h2>
-                                    <p style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>Morem ipsum dolor ametey consectre adipiscing.</p>
+                                    <h2 className="title"><Link href="/services-details">Taxation & Compliance</Link></h2>
+                                    <p style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}></p>
                                 </div>
                             </div>
                         </div>

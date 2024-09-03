@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 import Layout from "@/components/layout/Layout"
-import BrandSlider from "@/components/slider/BrandSlider"
 import Link from "next/link"
 
 
@@ -1689,7 +1688,7 @@ export default function ServiceDetails() {
                                             <ul className="list-wrap">
                                                 <li className={content === "finance" ? "active" : ""}><Link href="?finance" onClick={() => setContent("finance")}>Finance & Accounting <i className="flaticon-right-arrow" /></Link></li>
                                                 <li className={content === "management" ? "active" : ""}><Link href="?management" onClick={() => setContent("management")}>Management Consulting <i className="flaticon-right-arrow" /></Link></li>
-                                                <li className={content === "incorporation" ? "active" : ""}><Link href="?incorporation" onClick={() => setContent("incorporation")}>Incorporation & Registion <i className="flaticon-right-arrow" /></Link></li>
+                                                <li className={content === "incorporation" ? "active" : ""}><Link href="?incorporation" onClick={() => setContent("incorporation")}>Incorporation & Registration <i className="flaticon-right-arrow" /></Link></li>
                                                 <li className={content === "taxation" ? "active" : ""}><Link href="?taxation" onClick={() => setContent("taxation")}>Taxation & Complianc <i className="flaticon-right-arrow" /></Link></li>
                                             </ul>
                                         </div>
@@ -1724,12 +1723,6 @@ export default function ServiceDetails() {
                         </div>
                     </section>
                     {/* services-details-area-end */}
-                    {/* brand-area */}
-                    <div className="brand-area-seven">
-                        <div className="container">
-                            <BrandSlider />
-                        </div>
-                    </div>
                 </div>
 
             </Layout>
