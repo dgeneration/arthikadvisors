@@ -145,9 +145,14 @@ export default function Team() {
 
                     </div>
                 </div>
-
-            
-
+            </section>
+            <section className="end-section">
+                <div className="col-lg-6">
+                    <div className="section-title-two mb-45 tg-heading-subheading animation-style3">
+                        <span className="sub-title key-point">Explore Our Website</span>
+                        <h4 className="tg-element-title"> Learn more about our services, team, and how we can support your business. Browse our website for detailed information on how Arthik Advisors India Private Limited can help you achieve your business goals.</h4>
+                    </div>
+                </div>
             </section>
         </>
     )

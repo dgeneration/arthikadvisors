@@ -9978,3 +9978,15 @@ input::file-selector-button{
     }
     
 }
+
+.end-section {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    .key-point {
+        justify-content: center;
+        display: flex;
+    }
+}
