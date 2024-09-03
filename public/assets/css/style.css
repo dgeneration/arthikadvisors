@@ -9867,14 +9867,17 @@ label {
     align-items: center;
     justify-content: center;
     padding: 0 !important;
-    grid-template-columns: 90%;
     display: grid;
     column-gap: 10px;
 }
 .queries-outer-div {
-    width: 600px;
+    width: auto;
     min-height: 600px;
-    margin: auto;
+    margin: 40px;
+
+    @media (min-width: 640px) {
+        width: 600px !important;
+    }
 }
 
 .queries-form-div-section {
