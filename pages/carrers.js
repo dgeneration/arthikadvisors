@@ -22,7 +22,7 @@ export default function Carrers() {
                         <img src="/assets/img/services/services_details01.jpg" alt="" />
                     </div>
                     <p>At Arthik Advisors India Private Limited, we believe our greatest strength lies in our people. We are dedicated to creating an environment that fosters collaboration, innovation, and professional growth. As a leading business consultancy, we offer a range of career opportunities across Finance & Accounting, Management Consulting, and Taxation & Compliance.</p>
-                    <h4 className="">Why Choose Us?</h4>
+                    <h4 className="sub-title">Why Choose Us?</h4>
                     
                     <br></br>
                     <div className="accordion-wrap-three">

@@ -9990,3 +9990,15 @@ input::file-selector-button{
         display: flex;
     }
 }
+.services-details-content .sub-title {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    color: var(--tg-primary-color);
+    background: var(--tg-lavender);
+    border-radius: 50px;
+    padding: 4px 13px;
+    margin-bottom: 12px;
+}
