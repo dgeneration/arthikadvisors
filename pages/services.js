@@ -27,7 +27,7 @@ export default function Services() {
                                         </div>
                                         <div className="services-thumb">
                                             <img src="/assets/img/services/services_img01.jpg" alt="" />
-                                            <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
+                                            <Link href="/services-details?finance" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
                                             <li>Accounting Services</li>
@@ -48,7 +48,7 @@ export default function Services() {
                                         </div>
                                         <div className="services-thumb">
                                             <img src="/assets/img/services/services_img02.jpg" alt="" />
-                                            <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
+                                            <Link href="/services-details?management" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
                                             <li>Business Planning</li>
@@ -69,7 +69,7 @@ export default function Services() {
                                         </div>
                                         <div className="services-thumb">
                                             <img src="/assets/img/services/services_img03.jpg" alt="" />
-                                            <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
+                                            <Link href="/services-details?incorporation" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
                                             <li>Company Formation</li>
@@ -90,7 +90,7 @@ export default function Services() {
                                         </div>
                                         <div className="services-thumb">
                                             <img src="/assets/img/services/services_img04.jpg" alt="" />
-                                            <Link href="/services-details" className="btn transparent-btn">Our Services</Link>
+                                            <Link href="/services-details?taxation" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
                                             <li>Taxation Management & Planning</li>
