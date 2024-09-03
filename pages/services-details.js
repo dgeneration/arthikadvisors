@@ -1692,6 +1692,7 @@ export default function ServiceDetails() {
                                                 <li className={content === "taxation" ? "active" : ""}><Link href="?taxation" onClick={() => setContent("taxation")}>Taxation & Complianc <i className="flaticon-right-arrow" /></Link></li>
                                             </ul>
                                         </div>
+                                        {/** 
                                         <div className="services-widget">
                                             <h4 className="sw-title">Brochure</h4>
                                             <div className="services-brochure-wrap">
@@ -1717,6 +1718,7 @@ export default function ServiceDetails() {
                                                 </form>
                                             </div>
                                         </div>
+                                        */}
                                     </aside>
                                 </div>
                             </div>

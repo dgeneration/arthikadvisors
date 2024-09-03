@@ -87,7 +87,7 @@ export default function Carrers() {
                     </div>
                     <div className="sd-inner-wrap">
                         <div className="row align-items-center">
-                            <div className="col-56">
+                            <div className="">
                                 <div className="content">
                                     <h4 className="">Join Our Team</h4>
                                     <p> We are always on the lookout for talented individuals who are passionate about making a difference. If you are interested in pursuing a career with us, we encourage you to explore the opportunities available and apply.</p>
@@ -96,7 +96,7 @@ export default function Carrers() {
                                     <p> To express your interest in joining our team, please send your resume and a cover letter detailing your experience and career goals to careers@arthikadvisors.com. Be sure to include your area of interest in the subject line of your email.</p>
                                     
 
-                                    <h4 className="">Contact Us:</h4>
+                                    <h4 className="sub-title">Contact Us</h4>
                                     <p> For more information about career opportunities or to discuss potential roles, please contact our HR department at careers@arthikadvisors.com.</p>
 
 
