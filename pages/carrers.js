@@ -91,17 +91,24 @@ export default function Carrers() {
                                 <div className="content">
                                     <h4 className="">Join Our Team</h4>
                                     <p> We are always on the lookout for talented individuals who are passionate about making a difference. If you are interested in pursuing a career with us, we encourage you to explore the opportunities available and apply.</p>
-                                    <ul className="list-wrap">
-                                        <li><img src="/assets/img/icons/check_icon.svg" alt="" />Clear strategic direction and vision</li>
-                                        <li><img src="/assets/img/icons/check_icon.svg" alt="" />Improved resource allocation and efficiency</li>
-                                        <li><img src="/assets/img/icons/check_icon.svg" alt="" />Enhanced financial management and forecasting</li>
-                                        <li><img src="/assets/img/icons/check_icon.svg" alt="" />Proactive risk management and mitigation</li>
-                                    </ul>
+                                    
+                                    <h4 className="">How to Apply</h4>
+                                    <p> To express your interest in joining our team, please send your resume and a cover letter detailing your experience and career goals to careers@arthikadvisors.com. Be sure to include your area of interest in the subject line of your email.</p>
+                                    
+
+                                    <h4 className="">Contact Us:</h4>
+                                    <p> For more information about career opportunities or to discuss potential roles, please contact our HR department at careers@arthikadvisors.com.</p>
+
+
+                                    <h4 className="">Become Part of Our Success</h4>
+                                    <p> At Arthik Advisors India Private Limited, we are committed to building a team of dedicated professionals who are eager to contribute and grow. If you are looking for a rewarding career with ample opportunities for advancement, we invite you to apply and become part of our journey.</p>
+                                        
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p>By choosing our accounting and accounting outsourcing services, you can ensure that your financial operations are managed with precision and professionalism, freeing you to concentrate on driving your business forward. Contact us today to learn more about how we can support your financial needs.</p>
 
                 </div>
             </>
