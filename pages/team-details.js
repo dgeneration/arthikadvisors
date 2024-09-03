@@ -1,7 +1,19 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import { useRouter } from "next/router"
+import React, { useEffect, useState } from "react"
 
 export default function TeamDetails() {
+
+    const router = useRouter();
+    const [content, setContent] = useState("finance");
+
+    const [activeKey, setActiveKey] = useState(null);
+
+    const handleToggle = (key) => {
+        setActiveKey(prevKey => (prevKey === key ? null : key));
+    };
+
     return (
         <>
             <Layout headerStyle={6} footerStyle={1} breadcrumbTitle="Team Details">
@@ -17,12 +29,7 @@ export default function TeamDetails() {
                                         <ul className="list-wrap">
                                             <li><i className="flaticon-phone-call" />+123 8989 444</li>
                                             <li><i className="flaticon-mail" />info@gmail.com</li>
-                                            <li><i className="flaticon-location" />256 Avenue, Mark Street, Newyork City</li>
                                         </ul>
-                                        <div className="td-info-bottom">
-                                            <Link href="#" className="btn btn-three">Contact With Me</Link>
-                                            <Link href="#" className="share-btn"><img src="/assets/img/icons/share.svg" alt="" />Share</Link>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -33,28 +40,94 @@ export default function TeamDetails() {
                                     <p>A Chartered Accountant + DISA who specializes in finance and accounting, strategy, financial planning, valuation, M&A advisory, due diligence & risk control advisory. Vinit brings the expertise knowledge around the startup eco system. Given his entrepreneurial spirit, he has been led the role of lead consultant to multiple finance teams of established domestic and MNCs clientele.</p>
                                     <div className="team-skill-wrap">
                                         <h3 className="title-two">My Expertise  Skills</h3>
-                                        <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries</p>
-                                        <div className="progress-wrap">
-                                            <div className="progress-item">
-                                                <h6 className="title">Finance Consultancy</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={65} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".1s" style={{ width: '65%' }}><span>65%</span></div>
+                                        <div className="accordion-wrap-three">
+                                            <div className="accordion" id="accordionExample">
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(1)}>
+                                                        <button className={activeKey === 1 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        End-to-End Accounting
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne" className={activeKey === 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Complete management of your accounting department</li>
+                                                                <li>Transaction processing, bookkeeping, and financial reporting</li>
+                                                                <li>General ledger maintenance</li>
+                                                                <li>Month-end and year-end closing</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="progress-item">
-                                                <h6 className="title">Business</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={80} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".2s" style={{ width: '80%' }}><span>80%</span></div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(2)}>
+                                                        <button className={activeKey === 2 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Cloud-Based Accounting Solutions
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo" className={activeKey === 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Implementation and management of cloud accounting systems (e.g., QuickBooks, Zoho, Tally)</li>
+                                                                <li>Real-time access to financial data</li>
+                                                                <li>Automation of routine accounting tasks</li>
+                                                                <li>Data security and backup</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="progress-item">
-                                                <h6 className="title">Marketing</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".3s" style={{ width: '90%' }}><span>90%</span></div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(3)}>
+                                                        <button className={activeKey === 3 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Scalable Solutions
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 3 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Flexible service packages tailored to your business size and needs</li>
+                                                                <li>Scalability to handle growth and changing business requirements</li>
+                                                                <li>Support for multiple locations and international operations</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(4)}>
+                                                        <button className={activeKey === 4 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Specialized Expertise
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 4 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Access to experienced accountants and financial analysts</li>
+                                                                <li>Industry-specific accounting practices</li>
+                                                                <li>Advisory services for complex accounting issues</li>
+                                                                <li>Assistance with audits and regulatory compliance</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(5)}>
+                                                        <button className={activeKey === 5 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Cost Efficiency
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 5 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Reduction in overhead costs associated with in-house accounting staff</li>
+                                                                <li>No need for investment in accounting infrastructure</li>
+                                                                <li>Pay only for the services you need, when you need them</li>
+                                                                <li>Improved efficiency and accuracy in financial processes</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <p>estibulum ac diam sit amet quam vehicula elementum sed sit amet dui Sed porttitor lect us nibh. Praesent sapien massa, convallis a pellentesquam vehiculaestibulum ac diam sit amet quam vehicula elementumsit amet dui Sed porttitor lectus nibPraesent sapien massa convallis a pellentese nec diam sit amet quam vehicula.</p>
                                     </div>
                                 </div>
                             </div>
@@ -73,44 +146,105 @@ export default function TeamDetails() {
                                         <ul className="list-wrap">
                                             <li><i className="flaticon-phone-call" />+123 8989 444</li>
                                             <li><i className="flaticon-mail" />info@gmail.com</li>
-                                            <li><i className="flaticon-location" />256 Avenue, Mark Street, Newyork City</li>
                                         </ul>
-                                        <div className="td-info-bottom">
-                                            <Link href="#" className="btn btn-three">Contact With Me</Link>
-                                            <Link href="#" className="share-btn"><img src="/assets/img/icons/share.svg" alt="" />Share</Link>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-7">
                                 <div className="team-details-content">
-                                    <h2 className="title">Leslie Alexander</h2>
-                                    <span>Finance Advisor</span>
-                                    <p>estibulum ac diam sit amet quam vehicula elementum sed sit amet dui Sed porttitor lect us nibh. Praesent sapien massa, convallis a pellentesquam vehiculaestibulum ac diam sit amet quam vehicula elementumsit amet dui Sed porttitor lectus nibPraesent sapien massa convallis a pellentese nec diam sit amet quam vehicula.</p>
+                                    <h2 className="title">Vinit Kumar Sharma</h2>
+                                    <span>Director</span>
+                                    <p>A Chartered Accountant + DISA who specializes in finance and accounting, strategy, financial planning, valuation, M&A advisory, due diligence & risk control advisory. Vinit brings the expertise knowledge around the startup eco system. Given his entrepreneurial spirit, he has been led the role of lead consultant to multiple finance teams of established domestic and MNCs clientele.</p>
                                     <div className="team-skill-wrap">
                                         <h3 className="title-two">My Expertise  Skills</h3>
-                                        <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries</p>
-                                        <div className="progress-wrap">
-                                            <div className="progress-item">
-                                                <h6 className="title">Finance Consultancy</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={65} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".1s" style={{ width: '65%' }}><span>65%</span></div>
+                                        <div className="accordion-wrap-three">
+                                            <div className="accordion" id="accordionExample">
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(1)}>
+                                                        <button className={activeKey === 1 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        End-to-End Accounting
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne" className={activeKey === 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Complete management of your accounting department</li>
+                                                                <li>Transaction processing, bookkeeping, and financial reporting</li>
+                                                                <li>General ledger maintenance</li>
+                                                                <li>Month-end and year-end closing</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="progress-item">
-                                                <h6 className="title">Business</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={80} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".2s" style={{ width: '80%' }}><span>80%</span></div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(2)}>
+                                                        <button className={activeKey === 2 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Cloud-Based Accounting Solutions
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo" className={activeKey === 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Implementation and management of cloud accounting systems (e.g., QuickBooks, Zoho, Tally)</li>
+                                                                <li>Real-time access to financial data</li>
+                                                                <li>Automation of routine accounting tasks</li>
+                                                                <li>Data security and backup</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="progress-item">
-                                                <h6 className="title">Marketing</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".3s" style={{ width: '90%' }}><span>90%</span></div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(3)}>
+                                                        <button className={activeKey === 3 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Scalable Solutions
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 3 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Flexible service packages tailored to your business size and needs</li>
+                                                                <li>Scalability to handle growth and changing business requirements</li>
+                                                                <li>Support for multiple locations and international operations</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(4)}>
+                                                        <button className={activeKey === 4 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Specialized Expertise
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 4 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Access to experienced accountants and financial analysts</li>
+                                                                <li>Industry-specific accounting practices</li>
+                                                                <li>Advisory services for complex accounting issues</li>
+                                                                <li>Assistance with audits and regulatory compliance</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(5)}>
+                                                        <button className={activeKey === 5 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Cost Efficiency
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 5 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Reduction in overhead costs associated with in-house accounting staff</li>
+                                                                <li>No need for investment in accounting infrastructure</li>
+                                                                <li>Pay only for the services you need, when you need them</li>
+                                                                <li>Improved efficiency and accuracy in financial processes</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <p>estibulum ac diam sit amet quam vehicula elementum sed sit amet dui Sed porttitor lect us nibh. Praesent sapien massa, convallis a pellentesquam vehiculaestibulum ac diam sit amet quam vehicula elementumsit amet dui Sed porttitor lectus nibPraesent sapien massa convallis a pellentese nec diam sit amet quam vehicula.</p>
                                     </div>
                                 </div>
                             </div>
@@ -129,44 +263,105 @@ export default function TeamDetails() {
                                         <ul className="list-wrap">
                                             <li><i className="flaticon-phone-call" />+123 8989 444</li>
                                             <li><i className="flaticon-mail" />info@gmail.com</li>
-                                            <li><i className="flaticon-location" />256 Avenue, Mark Street, Newyork City</li>
                                         </ul>
-                                        <div className="td-info-bottom">
-                                            <Link href="#" className="btn btn-three">Contact With Me</Link>
-                                            <Link href="#" className="share-btn"><img src="/assets/img/icons/share.svg" alt="" />Share</Link>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-7">
                                 <div className="team-details-content">
-                                    <h2 className="title">Leslie Alexander</h2>
-                                    <span>Finance Advisor</span>
-                                    <p>estibulum ac diam sit amet quam vehicula elementum sed sit amet dui Sed porttitor lect us nibh. Praesent sapien massa, convallis a pellentesquam vehiculaestibulum ac diam sit amet quam vehicula elementumsit amet dui Sed porttitor lectus nibPraesent sapien massa convallis a pellentese nec diam sit amet quam vehicula.</p>
+                                    <h2 className="title">Vinit Kumar Sharma</h2>
+                                    <span>Director</span>
+                                    <p>A Chartered Accountant + DISA who specializes in finance and accounting, strategy, financial planning, valuation, M&A advisory, due diligence & risk control advisory. Vinit brings the expertise knowledge around the startup eco system. Given his entrepreneurial spirit, he has been led the role of lead consultant to multiple finance teams of established domestic and MNCs clientele.</p>
                                     <div className="team-skill-wrap">
                                         <h3 className="title-two">My Expertise  Skills</h3>
-                                        <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries</p>
-                                        <div className="progress-wrap">
-                                            <div className="progress-item">
-                                                <h6 className="title">Finance Consultancy</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={65} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".1s" style={{ width: '65%' }}><span>65%</span></div>
+                                        <div className="accordion-wrap-three">
+                                            <div className="accordion" id="accordionExample">
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(1)}>
+                                                        <button className={activeKey === 1 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        End-to-End Accounting
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne" className={activeKey === 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Complete management of your accounting department</li>
+                                                                <li>Transaction processing, bookkeeping, and financial reporting</li>
+                                                                <li>General ledger maintenance</li>
+                                                                <li>Month-end and year-end closing</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="progress-item">
-                                                <h6 className="title">Business</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={80} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".2s" style={{ width: '80%' }}><span>80%</span></div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(2)}>
+                                                        <button className={activeKey === 2 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Cloud-Based Accounting Solutions
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo" className={activeKey === 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Implementation and management of cloud accounting systems (e.g., QuickBooks, Zoho, Tally)</li>
+                                                                <li>Real-time access to financial data</li>
+                                                                <li>Automation of routine accounting tasks</li>
+                                                                <li>Data security and backup</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="progress-item">
-                                                <h6 className="title">Marketing</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".3s" style={{ width: '90%' }}><span>90%</span></div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(3)}>
+                                                        <button className={activeKey === 3 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Scalable Solutions
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 3 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Flexible service packages tailored to your business size and needs</li>
+                                                                <li>Scalability to handle growth and changing business requirements</li>
+                                                                <li>Support for multiple locations and international operations</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(4)}>
+                                                        <button className={activeKey === 4 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Specialized Expertise
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 4 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Access to experienced accountants and financial analysts</li>
+                                                                <li>Industry-specific accounting practices</li>
+                                                                <li>Advisory services for complex accounting issues</li>
+                                                                <li>Assistance with audits and regulatory compliance</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(5)}>
+                                                        <button className={activeKey === 5 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Cost Efficiency
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 5 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Reduction in overhead costs associated with in-house accounting staff</li>
+                                                                <li>No need for investment in accounting infrastructure</li>
+                                                                <li>Pay only for the services you need, when you need them</li>
+                                                                <li>Improved efficiency and accuracy in financial processes</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <p>estibulum ac diam sit amet quam vehicula elementum sed sit amet dui Sed porttitor lect us nibh. Praesent sapien massa, convallis a pellentesquam vehiculaestibulum ac diam sit amet quam vehicula elementumsit amet dui Sed porttitor lectus nibPraesent sapien massa convallis a pellentese nec diam sit amet quam vehicula.</p>
                                     </div>
                                 </div>
                             </div>
@@ -185,44 +380,105 @@ export default function TeamDetails() {
                                         <ul className="list-wrap">
                                             <li><i className="flaticon-phone-call" />+123 8989 444</li>
                                             <li><i className="flaticon-mail" />info@gmail.com</li>
-                                            <li><i className="flaticon-location" />256 Avenue, Mark Street, Newyork City</li>
                                         </ul>
-                                        <div className="td-info-bottom">
-                                            <Link href="#" className="btn btn-three">Contact With Me</Link>
-                                            <Link href="#" className="share-btn"><img src="/assets/img/icons/share.svg" alt="" />Share</Link>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-7">
                                 <div className="team-details-content">
-                                    <h2 className="title">Leslie Alexander</h2>
-                                    <span>Finance Advisor</span>
-                                    <p>estibulum ac diam sit amet quam vehicula elementum sed sit amet dui Sed porttitor lect us nibh. Praesent sapien massa, convallis a pellentesquam vehiculaestibulum ac diam sit amet quam vehicula elementumsit amet dui Sed porttitor lectus nibPraesent sapien massa convallis a pellentese nec diam sit amet quam vehicula.</p>
+                                    <h2 className="title">Vinit Kumar Sharma</h2>
+                                    <span>Director</span>
+                                    <p>A Chartered Accountant + DISA who specializes in finance and accounting, strategy, financial planning, valuation, M&A advisory, due diligence & risk control advisory. Vinit brings the expertise knowledge around the startup eco system. Given his entrepreneurial spirit, he has been led the role of lead consultant to multiple finance teams of established domestic and MNCs clientele.</p>
                                     <div className="team-skill-wrap">
                                         <h3 className="title-two">My Expertise  Skills</h3>
-                                        <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries</p>
-                                        <div className="progress-wrap">
-                                            <div className="progress-item">
-                                                <h6 className="title">Finance Consultancy</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={65} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".1s" style={{ width: '65%' }}><span>65%</span></div>
+                                        <div className="accordion-wrap-three">
+                                            <div className="accordion" id="accordionExample">
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(1)}>
+                                                        <button className={activeKey === 1 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        End-to-End Accounting
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne" className={activeKey === 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Complete management of your accounting department</li>
+                                                                <li>Transaction processing, bookkeeping, and financial reporting</li>
+                                                                <li>General ledger maintenance</li>
+                                                                <li>Month-end and year-end closing</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="progress-item">
-                                                <h6 className="title">Business</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={80} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".2s" style={{ width: '80%' }}><span>80%</span></div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(2)}>
+                                                        <button className={activeKey === 2 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Cloud-Based Accounting Solutions
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo" className={activeKey === 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Implementation and management of cloud accounting systems (e.g., QuickBooks, Zoho, Tally)</li>
+                                                                <li>Real-time access to financial data</li>
+                                                                <li>Automation of routine accounting tasks</li>
+                                                                <li>Data security and backup</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="progress-item">
-                                                <h6 className="title">Marketing</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".3s" style={{ width: '90%' }}><span>90%</span></div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(3)}>
+                                                        <button className={activeKey === 3 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Scalable Solutions
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 3 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Flexible service packages tailored to your business size and needs</li>
+                                                                <li>Scalability to handle growth and changing business requirements</li>
+                                                                <li>Support for multiple locations and international operations</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(4)}>
+                                                        <button className={activeKey === 4 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Specialized Expertise
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 4 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Access to experienced accountants and financial analysts</li>
+                                                                <li>Industry-specific accounting practices</li>
+                                                                <li>Advisory services for complex accounting issues</li>
+                                                                <li>Assistance with audits and regulatory compliance</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(5)}>
+                                                        <button className={activeKey === 5 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Cost Efficiency
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 5 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Reduction in overhead costs associated with in-house accounting staff</li>
+                                                                <li>No need for investment in accounting infrastructure</li>
+                                                                <li>Pay only for the services you need, when you need them</li>
+                                                                <li>Improved efficiency and accuracy in financial processes</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <p>estibulum ac diam sit amet quam vehicula elementum sed sit amet dui Sed porttitor lect us nibh. Praesent sapien massa, convallis a pellentesquam vehiculaestibulum ac diam sit amet quam vehicula elementumsit amet dui Sed porttitor lectus nibPraesent sapien massa convallis a pellentese nec diam sit amet quam vehicula.</p>
                                     </div>
                                 </div>
                             </div>
@@ -241,44 +497,105 @@ export default function TeamDetails() {
                                         <ul className="list-wrap">
                                             <li><i className="flaticon-phone-call" />+123 8989 444</li>
                                             <li><i className="flaticon-mail" />info@gmail.com</li>
-                                            <li><i className="flaticon-location" />256 Avenue, Mark Street, Newyork City</li>
                                         </ul>
-                                        <div className="td-info-bottom">
-                                            <Link href="#" className="btn btn-three">Contact With Me</Link>
-                                            <Link href="#" className="share-btn"><img src="/assets/img/icons/share.svg" alt="" />Share</Link>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-7">
                                 <div className="team-details-content">
-                                    <h2 className="title">Leslie Alexander</h2>
-                                    <span>Finance Advisor</span>
-                                    <p>estibulum ac diam sit amet quam vehicula elementum sed sit amet dui Sed porttitor lect us nibh. Praesent sapien massa, convallis a pellentesquam vehiculaestibulum ac diam sit amet quam vehicula elementumsit amet dui Sed porttitor lectus nibPraesent sapien massa convallis a pellentese nec diam sit amet quam vehicula.</p>
+                                    <h2 className="title">Vinit Kumar Sharma</h2>
+                                    <span>Director</span>
+                                    <p>A Chartered Accountant + DISA who specializes in finance and accounting, strategy, financial planning, valuation, M&A advisory, due diligence & risk control advisory. Vinit brings the expertise knowledge around the startup eco system. Given his entrepreneurial spirit, he has been led the role of lead consultant to multiple finance teams of established domestic and MNCs clientele.</p>
                                     <div className="team-skill-wrap">
                                         <h3 className="title-two">My Expertise  Skills</h3>
-                                        <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries</p>
-                                        <div className="progress-wrap">
-                                            <div className="progress-item">
-                                                <h6 className="title">Finance Consultancy</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={65} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".1s" style={{ width: '65%' }}><span>65%</span></div>
+                                        <div className="accordion-wrap-three">
+                                            <div className="accordion" id="accordionExample">
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(1)}>
+                                                        <button className={activeKey === 1 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        End-to-End Accounting
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne" className={activeKey === 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Complete management of your accounting department</li>
+                                                                <li>Transaction processing, bookkeeping, and financial reporting</li>
+                                                                <li>General ledger maintenance</li>
+                                                                <li>Month-end and year-end closing</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="progress-item">
-                                                <h6 className="title">Business</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={80} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".2s" style={{ width: '80%' }}><span>80%</span></div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(2)}>
+                                                        <button className={activeKey === 2 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Cloud-Based Accounting Solutions
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo" className={activeKey === 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Implementation and management of cloud accounting systems (e.g., QuickBooks, Zoho, Tally)</li>
+                                                                <li>Real-time access to financial data</li>
+                                                                <li>Automation of routine accounting tasks</li>
+                                                                <li>Data security and backup</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="progress-item">
-                                                <h6 className="title">Marketing</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".3s" style={{ width: '90%' }}><span>90%</span></div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(3)}>
+                                                        <button className={activeKey === 3 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Scalable Solutions
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 3 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Flexible service packages tailored to your business size and needs</li>
+                                                                <li>Scalability to handle growth and changing business requirements</li>
+                                                                <li>Support for multiple locations and international operations</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(4)}>
+                                                        <button className={activeKey === 4 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Specialized Expertise
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 4 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Access to experienced accountants and financial analysts</li>
+                                                                <li>Industry-specific accounting practices</li>
+                                                                <li>Advisory services for complex accounting issues</li>
+                                                                <li>Assistance with audits and regulatory compliance</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(5)}>
+                                                        <button className={activeKey === 5 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Cost Efficiency
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 5 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Reduction in overhead costs associated with in-house accounting staff</li>
+                                                                <li>No need for investment in accounting infrastructure</li>
+                                                                <li>Pay only for the services you need, when you need them</li>
+                                                                <li>Improved efficiency and accuracy in financial processes</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <p>estibulum ac diam sit amet quam vehicula elementum sed sit amet dui Sed porttitor lect us nibh. Praesent sapien massa, convallis a pellentesquam vehiculaestibulum ac diam sit amet quam vehicula elementumsit amet dui Sed porttitor lectus nibPraesent sapien massa convallis a pellentese nec diam sit amet quam vehicula.</p>
                                     </div>
                                 </div>
                             </div>
@@ -297,44 +614,105 @@ export default function TeamDetails() {
                                         <ul className="list-wrap">
                                             <li><i className="flaticon-phone-call" />+123 8989 444</li>
                                             <li><i className="flaticon-mail" />info@gmail.com</li>
-                                            <li><i className="flaticon-location" />256 Avenue, Mark Street, Newyork City</li>
                                         </ul>
-                                        <div className="td-info-bottom">
-                                            <Link href="#" className="btn btn-three">Contact With Me</Link>
-                                            <Link href="#" className="share-btn"><img src="/assets/img/icons/share.svg" alt="" />Share</Link>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-7">
                                 <div className="team-details-content">
-                                    <h2 className="title">Leslie Alexander</h2>
-                                    <span>Finance Advisor</span>
-                                    <p>estibulum ac diam sit amet quam vehicula elementum sed sit amet dui Sed porttitor lect us nibh. Praesent sapien massa, convallis a pellentesquam vehiculaestibulum ac diam sit amet quam vehicula elementumsit amet dui Sed porttitor lectus nibPraesent sapien massa convallis a pellentese nec diam sit amet quam vehicula.</p>
+                                    <h2 className="title">Vinit Kumar Sharma</h2>
+                                    <span>Director</span>
+                                    <p>A Chartered Accountant + DISA who specializes in finance and accounting, strategy, financial planning, valuation, M&A advisory, due diligence & risk control advisory. Vinit brings the expertise knowledge around the startup eco system. Given his entrepreneurial spirit, he has been led the role of lead consultant to multiple finance teams of established domestic and MNCs clientele.</p>
                                     <div className="team-skill-wrap">
                                         <h3 className="title-two">My Expertise  Skills</h3>
-                                        <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries</p>
-                                        <div className="progress-wrap">
-                                            <div className="progress-item">
-                                                <h6 className="title">Finance Consultancy</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={65} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".1s" style={{ width: '65%' }}><span>65%</span></div>
+                                        <div className="accordion-wrap-three">
+                                            <div className="accordion" id="accordionExample">
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(1)}>
+                                                        <button className={activeKey === 1 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        End-to-End Accounting
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne" className={activeKey === 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Complete management of your accounting department</li>
+                                                                <li>Transaction processing, bookkeeping, and financial reporting</li>
+                                                                <li>General ledger maintenance</li>
+                                                                <li>Month-end and year-end closing</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="progress-item">
-                                                <h6 className="title">Business</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={80} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".2s" style={{ width: '80%' }}><span>80%</span></div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(2)}>
+                                                        <button className={activeKey === 2 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Cloud-Based Accounting Solutions
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo" className={activeKey === 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Implementation and management of cloud accounting systems (e.g., QuickBooks, Zoho, Tally)</li>
+                                                                <li>Real-time access to financial data</li>
+                                                                <li>Automation of routine accounting tasks</li>
+                                                                <li>Data security and backup</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="progress-item">
-                                                <h6 className="title">Marketing</h6>
-                                                <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
-                                                    <div className="progress-bar wow slideInLeft" data-wow-delay=".3s" style={{ width: '90%' }}><span>90%</span></div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(3)}>
+                                                        <button className={activeKey === 3 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Scalable Solutions
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 3 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Flexible service packages tailored to your business size and needs</li>
+                                                                <li>Scalability to handle growth and changing business requirements</li>
+                                                                <li>Support for multiple locations and international operations</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(4)}>
+                                                        <button className={activeKey === 4 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Specialized Expertise
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 4 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Access to experienced accountants and financial analysts</li>
+                                                                <li>Industry-specific accounting practices</li>
+                                                                <li>Advisory services for complex accounting issues</li>
+                                                                <li>Assistance with audits and regulatory compliance</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" onClick={() => handleToggle(5)}>
+                                                        <button className={activeKey === 5 ? "accordion-button" : "accordion-button collapsed"} type="button">
+                                                        Cost Efficiency
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" className={activeKey === 5 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
+                                                        <div className="accordion-body">
+                                                            <ul>
+                                                                <li>Reduction in overhead costs associated with in-house accounting staff</li>
+                                                                <li>No need for investment in accounting infrastructure</li>
+                                                                <li>Pay only for the services you need, when you need them</li>
+                                                                <li>Improved efficiency and accuracy in financial processes</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <p>estibulum ac diam sit amet quam vehicula elementum sed sit amet dui Sed porttitor lect us nibh. Praesent sapien massa, convallis a pellentesquam vehiculaestibulum ac diam sit amet quam vehicula elementumsit amet dui Sed porttitor lectus nibPraesent sapien massa convallis a pellentese nec diam sit amet quam vehicula.</p>
                                     </div>
                                 </div>
                             </div>
