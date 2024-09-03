@@ -42,7 +42,7 @@ export default function Overview() {
                                                 <i className="flaticon-rating" />
                                             </div>
                                             <div className="content">
-                                                <h2 className="count"><CounterUp count={1} />k</h2>
+                                                <h2 className="count"><CounterUp count={5} />k</h2>
                                                 <p>Happy Clients</p>
                                             </div>
                                         </li>
