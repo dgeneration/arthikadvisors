@@ -1,27 +1,42 @@
 import Link from "next/link"
+import { useRouter } from "next/router"
 import { useState } from "react"
 export default function MobileMenu() {
-    const [isActive, setIsActive] = useState({
-        status: false,
-        key: "",
-    })
+    const router = useRouter();
 
-    const handleToggle = (key) => {
-        if (isActive.key === key) {
-            setIsActive({
-                status: false,
-            })
-        } else {
-            setIsActive({
-                status: true,
-                key,
-            })
+    const isActive = (pathname) => router.pathname === pathname;
+    {/** 
+        const [isActive, setIsActive] = useState({
+            status: false,
+            key: "",
+        })
+
+        const handleToggle = (key) => {
+            if (isActive.key === key) {
+                setIsActive({
+                    status: false,
+                })
+            } else {
+                setIsActive({
+                    status: true,
+                    key,
+                })
+            }
         }
-    }
+    */}
     return (
         <>
             <ul className="navigation">
-                <li className="active menu-item-has-children"><Link href="#">Home</Link>
+                <li className={isActive("/") ? "active" : ""}><Link href="/">Home</Link></li>
+                <li className={isActive("/services") ? "active" : ""}><Link href="/services">Services</Link></li>
+                <li className={isActive("/team-details") ? "active" : ""}><Link href="/team-details">Team</Link></li>
+                <li className={isActive("/queries") ? "active" : ""}><Link href="/queries">Queries</Link></li>
+                <li className={isActive("/carrers") ? "active" : ""}><Link href="/carrers">Carrers</Link></li>
+                <li className={isActive("/about") ? "active" : ""}><Link href="/about">About Us</Link></li>
+                <li className={isActive("/contact") ? "active" : ""}><Link href="/contact">Contact Us</Link></li>
+
+                {/** 
+                <li className="active menu-item-has-children"><Link href="/">Home</Link>
                     <ul className="sub-menu" style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
                         <li><Link href="/">Finance</Link></li>
                         <li><Link href="/index-2">Consulting</Link></li>
@@ -29,7 +44,8 @@ export default function MobileMenu() {
                         <li><Link href="/index-4">Digital Agency</Link></li>
                         <li><Link href="/index-5">Business</Link></li>
                     </ul>
-                    <div className={isActive.key == 1 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(1)}><span className="fas fa-angle-down" /></div></li>
+                    <div className={isActive.key == 1 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(1)}><span className="fas fa-angle-down" /></div>
+                </li>
                 <li className="menu-item-has-children"><Link href="#">About Us</Link>
                     <ul className="sub-menu" style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
                         <li><Link href="/about">About One</Link></li>
@@ -71,6 +87,7 @@ export default function MobileMenu() {
                     </ul>
                     <div className={isActive.key == 4 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(4)}><span className="fas fa-angle-down" /></div></li>
                 <li><Link href="/contact">contacts</Link></li>
+                */}
             </ul>
         </>
     )
