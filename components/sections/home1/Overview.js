@@ -23,9 +23,9 @@ export default function Overview() {
                                     <span className="sub-title">Why Choose Us?</span>
                                     <h2 className="title tg-element-title">Our experienced team delivers tailored solutions across various industries.</h2>
                                 </div>
-                                <p className="info-one">Client-Centric Approach: We prioritize understanding your needs and providing solutions that drive your success.</p>
-                                <p className="info-two">Innovative Solutions: We utilize the latest tools and strategies to address complex business challenges.</p>
-                                <p className="info-two">Commitment to Excellence: We are dedicated to delivering high-quality services and achieving exceptional results.</p>
+                                <p className="info-one"><i className="fas fa-arrow-right" /> Client-Centric Approach: We prioritize understanding your needs and providing solutions that drive your success.</p>
+                                <p className="info-two"><i className="fas fa-arrow-right" /> Innovative Solutions: We utilize the latest tools and strategies to address complex business challenges.</p>
+                                <p className="info-two"><i className="fas fa-arrow-right" /> Commitment to Excellence: We are dedicated to delivering high-quality services and achieving exceptional results.</p>
                                 <div className="content-bottom">
                                     <ul className="list-wrap">
                                         <li>
