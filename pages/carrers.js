@@ -17,30 +17,30 @@ export default function Carrers() {
         carrers: (
             <>
                 <div className="services-details-content">
-                    <h2 className="title">MANAGEMENT CONSULTING</h2>
+                    <h2 className="title">Join Our Dynamic Team</h2>
                     <div className="services-details-thumb">
                         <img src="/assets/img/services/services_details01.jpg" alt="" />
                     </div>
-                    <p>Our Management Consulting services are designed to help businesses navigate complex challenges, enhance performance, and achieve their strategic goals. With a focus on tailored solutions, we provide expert guidance and support in business planning, decision-making, and process improvement.</p>
-                    <h4 className="">BUSINESS PLANNING</h4>
+                    <p>At Arthik Advisors India Private Limited, we believe our greatest strength lies in our people. We are dedicated to creating an environment that fosters collaboration, innovation, and professional growth. As a leading business consultancy, we offer a range of career opportunities across Finance & Accounting, Management Consulting, and Taxation & Compliance.</p>
+                    <h4 className="">Why Choose Us?</h4>
                     
-                    <p>Effective business planning is the cornerstone of long-term success. Our business planning services help organizations develop comprehensive plans that align with their vision and objectives, ensuring a clear roadmap for growth and sustainability.</p>
-                    <h4 className="">Key Service</h4>
+                    <br></br>
                     <div className="accordion-wrap-three">
                         <div className="accordion" id="accordionExample">
                             <div className="accordion-item">
                                 <h2 className="accordion-header" onClick={() => handleToggle(1)}>
                                     <button className={activeKey === 1 ? "accordion-button" : "accordion-button collapsed"} type="button">
-                                    Strategic Planning
+                                    1. Professional Growth:
                                     </button>
                                 </h2>
                                 <div id="collapseOne" className={activeKey === 1 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                     <div className="accordion-body">
                                         <ul>
-                                            <li>Development of long-term strategic plans</li>
-                                            <li>Market analysis and competitive benchmarking</li>
-                                            <li>SWOT analysis (Strengths, Weaknesses, Opportunities, Threats)</li>
-                                            <li>Identification of strategic goals and objectives</li>
+                                            <li><b>Career Advancement:</b> We offer clear career paths and opportunities for advancement. Our team members are encouraged to take on new challenges and broaden their skills.</li>
+                                            <br></br>
+                                            <li><b>Continuous Learning: </b> Access to ongoing professional development and training to enhance your expertise and support your career progression.</li>
+                                            
+                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -48,16 +48,17 @@ export default function Carrers() {
                             <div className="accordion-item">
                                 <h2 className="accordion-header" onClick={() => handleToggle(2)}>
                                     <button className={activeKey === 2 ? "accordion-button" : "accordion-button collapsed"} type="button">
-                                    Operational Planning
+                                    2. Innovative Work Environment:
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" className={activeKey === 2 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                     <div className="accordion-body">
                                         <ul>
-                                            <li>Detailed operational plans to support strategic goals</li>
-                                            <li>Resource allocation and capacity planning</li>
-                                            <li>Performance metrics and KPIs</li>
-                                            <li>Contingency planning and risk management</li>
+                                            <li><b>Collaborative Culture: </b> Join a dynamic team that values open communication and teamwork, where your ideas and contributions are valued.</li>
+                                            <br></br>
+                                            <li><b>Diverse Projects: </b> Engage in a variety of impactful projects that will challenge you and contribute to your professional development.</li>
+                                            
+                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -65,16 +66,17 @@ export default function Carrers() {
                             <div className="accordion-item">
                                 <h2 className="accordion-header" onClick={() => handleToggle(3)}>
                                     <button className={activeKey === 3 ? "accordion-button" : "accordion-button collapsed"} type="button">
-                                    Financial Planning
+                                    3. Employee Well-being:
                                     </button>
                                 </h2>
                                 <div id="collapseThree" className={activeKey === 3 ? "accordion-collapse collapse show" : "accordion-collapse collapse"}>
                                     <div className="accordion-body">
                                         <ul>
-                                            <li>Budgeting and financial forecasting</li>
-                                            <li>Cash flow management and financial modeling</li>
-                                            <li>Investment planning and capital allocation</li>
-                                            <li>Break-even analysis and profitability projections</li>
+                                            <li><b>Work-Life Balance: </b> We provide flexible working options to help you maintain a healthy balance between your professional and personal life.</li>
+                                            <br></br>
+                                            <li><b>Comprehensive Benefits: </b> Enjoy a competitive salary package and benefits designed to support your health, well-being, and financial stability.</li>
+                                            
+                                            
                                         </ul>
                                     </div>
                                 </div>
