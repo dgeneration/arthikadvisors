@@ -28,9 +28,9 @@ export default function TeamDetails() {
                             </div>
                             <div className="col-lg-7">
                                 <div className="team-details-content">
-                                    <h2 className="title">Leslie Alexander</h2>
-                                    <span>Finance Advisor</span>
-                                    <p>estibulum ac diam sit amet quam vehicula elementum sed sit amet dui Sed porttitor lect us nibh. Praesent sapien massa, convallis a pellentesquam vehiculaestibulum ac diam sit amet quam vehicula elementumsit amet dui Sed porttitor lectus nibPraesent sapien massa convallis a pellentese nec diam sit amet quam vehicula.</p>
+                                    <h2 className="title">Vinit Kumar Sharma</h2>
+                                    <span>Director</span>
+                                    <p>A Chartered Accountant + DISA who specializes in finance and accounting, strategy, financial planning, valuation, M&A advisory, due diligence & risk control advisory. Vinit brings the expertise knowledge around the startup eco system. Given his entrepreneurial spirit, he has been led the role of lead consultant to multiple finance teams of established domestic and MNCs clientele.</p>
                                     <div className="team-skill-wrap">
                                         <h3 className="title-two">My Expertise  Skills</h3>
                                         <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries</p>
