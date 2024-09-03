@@ -20,11 +20,12 @@ export default function Overview() {
                         <div className="col-lg-6">
                             <div className="overview-content">
                                 <div className="section-title-two mb-20 tg-heading-subheading animation-style3">
-                                    <span className="sub-title">Company Overview</span>
-                                    <h2 className="title tg-element-title">Plan your business strategy with Our Experts</h2>
+                                    <span className="sub-title">Why Choose Us?</span>
+                                    <h2 className="title tg-element-title">Our experienced team delivers tailored solutions across various industries.</h2>
                                 </div>
-                                <p className="info-one">Morem ipsum dolor sit amet, consectetur adipiscing elita florai psum dolor sit amet, consecteture.Borem ipsum dolor sit amet, consectetur adipiscing elita florai psum.</p>
-                                <p className="info-two">Morem ipsum dolor sit amet, consectetur adipiscing elita florai psum dolor sit amet, consecteture.Borem.</p>
+                                <p className="info-one">Client-Centric Approach: We prioritize understanding your needs and providing solutions that drive your success.</p>
+                                <p className="info-two">Innovative Solutions: We utilize the latest tools and strategies to address complex business challenges.</p>
+                                <p className="info-two">Commitment to Excellence: We are dedicated to delivering high-quality services and achieving exceptional results.</p>
                                 <div className="content-bottom">
                                     <ul className="list-wrap">
                                         <li>
@@ -32,7 +33,7 @@ export default function Overview() {
                                                 <i className="flaticon-trophy" />
                                             </div>
                                             <div className="content">
-                                                <h2 className="count"><CounterUp count={235} />+</h2>
+                                                <h2 className="count"><CounterUp count={25} />+</h2>
                                                 <p>Best Award</p>
                                             </div>
                                         </li>
@@ -41,7 +42,7 @@ export default function Overview() {
                                                 <i className="flaticon-rating" />
                                             </div>
                                             <div className="content">
-                                                <h2 className="count"><CounterUp count={98} />k</h2>
+                                                <h2 className="count"><CounterUp count={5} />k</h2>
                                                 <p>Happy Clients</p>
                                             </div>
                                         </li>

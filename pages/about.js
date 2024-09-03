@@ -1,7 +1,6 @@
 import CounterUp from "@/components/elements/CounterUp"
 import SocialToggle from "@/components/elements/SocialToggle"
 import Layout from "@/components/layout/Layout"
-import BrandSlider from "@/components/slider/BrandSlider"
 import TestimonialSlider1 from "@/components/slider/TestimonialSlider1"
 import Link from "next/link"
 
@@ -19,7 +18,7 @@ export default function About() {
                                         <img src="/assets/img/images/inner_about_img02.jpg" alt="" data-aos="fade-up" data-aos-delay={300} />
                                         <img src="/assets/img/images/inner_about_shape01.png" alt="" className="shape" data-aos="zoom-in" data-aos-delay={500} />
                                         <div className="experience-wrap" data-aos="fade-left" data-aos-delay={0}>
-                                            <h2 className="title">25</h2>
+                                            <h2 className="title">10</h2>
                                             <p>Years Of Experience</p>
                                         </div>
                                     </div>
@@ -223,12 +222,6 @@ export default function About() {
                         </div>
                     </section>
                     {/* testimonial-area-end */}
-                    {/* brand-area */}
-                    <div className="brand-area-six pt-80 pb-80">
-                        <div className="container">
-                            <BrandSlider />
-                        </div>
-                    </div>
                 </div>
             </Layout>
         </>

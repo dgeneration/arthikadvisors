@@ -11,8 +11,8 @@ export default function Features() {
                                         <i className="flaticon-profit" />
                                     </div>
                                     <div className="features-content-two">
-                                        <h4 className="title">Growing Business</h4>
-                                        <p>Finance helps you to convert into a strategic asset get.</p>
+                                        <h4 className="title">Finance & Accounting</h4>
+                                        <p>ensure that your financial operations run smoothly and efficiently</p>
                                     </div>
                                 </div>
                             </div>
@@ -22,8 +22,8 @@ export default function Features() {
                                         <i className="flaticon-investment" />
                                     </div>
                                     <div className="features-content-two">
-                                        <h4 className="title">Finance Investment</h4>
-                                        <p>Finance helps you to convert into a strategic asset get.</p>
+                                        <h4 className="title">Management Consulting</h4>
+                                        <p>help businesses improve their performance and achieve their goals</p>
                                     </div>
                                 </div>
                             </div>
@@ -33,8 +33,8 @@ export default function Features() {
                                         <i className="flaticon-taxes" />
                                     </div>
                                     <div className="features-content-two">
-                                        <h4 className="title">Tax Advisory</h4>
-                                        <p>Finance helps you to convert into a strategic asset get.</p>
+                                        <h4 className="title">Taxation & Compliances</h4>
+                                        <p>helps you manage your tax obligations effectively and stay compliant with regulatory requirements</p>
                                     </div>
                                 </div>
                             </div>
