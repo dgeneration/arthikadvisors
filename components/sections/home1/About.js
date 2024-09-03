@@ -18,9 +18,9 @@ export default function About() {
                             <div className="about-content-three">
                                 <div className="section-title-two mb-20 tg-heading-subheading animation-style3">
                                     <span className="sub-title">Who We Are</span>
-                                    <h2 className="title tg-element-title"> Leading consultancy firm with a team of experienced professionals</h2>
+                                    <h2 className="title tg-element-title"> Your Trusted Advisors in Strategic Finance, Accounting, and Risk Control</h2>
                                 </div>
-                                <p className="info-one">specializing in finance, accounting, management consulting, taxation, and risk control advisory. We combine strategic insights with practical solutions to help businesses overcome challenges and achieve their goals.</p>
+                                <p className="info-one">We are a leading consultancy firm with a team of experienced professionals specializing in finance, accounting, management consulting, taxation, and risk control advisory. We combine strategic insights with practical solutions to help businesses overcome challenges and achieve their goals.</p>
                                 <div className="about-list-two">
                                     <ul className="list-wrap">
                                         <li><i className="fas fa-arrow-right" />100% Better results</li>
