@@ -31,7 +31,7 @@ export default function MobileMenu() {
                 <li className={isActive("/services") ? "active" : ""}><Link href="/services">Services</Link></li>
                 <li className={isActive("/team-details") ? "active" : ""}><Link href="/team-details">Team</Link></li>
                 <li className={isActive("/queries") ? "active" : ""}><Link href="/queries">Queries</Link></li>
-                <li className={isActive("/carrers") ? "active" : ""}><Link href="/carrers">Carrers</Link></li>
+                <li className={isActive("/careers") ? "active" : ""}><Link href="/careers">Careers</Link></li>
                 <li className={isActive("/about") ? "active" : ""}><Link href="/about">About Us</Link></li>
                 <li className={isActive("/contact") ? "active" : ""}><Link href="/contact">Contact Us</Link></li>
 

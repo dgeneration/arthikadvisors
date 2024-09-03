@@ -152,20 +152,20 @@ export default function About() {
                                             <SocialToggle />
                                         </div>
                                         <div className="team-content-three">
-                                            <h4 className="title"><Link href="/team-details">Brooklyn Simmons</Link></h4>
-                                            <span>Finance Advisor</span>
+                                            <h4 className="title"><Link href="/team-details">Vinit Kumar Sharma</Link></h4>
+                                            <span>Director</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                                     <div className="team-item-three">
                                         <div className="team-thumb-three">
-                                            <img src="/assets/img/team/h3_team_img02.png" alt="" />
+                                            <img src="/assets/img/team/h3_team_img01.png" alt="" />
                                             <SocialToggle />
                                         </div>
                                         <div className="team-content-three">
-                                            <h4 className="title"><Link href="/team-details">Jenny Wilson</Link></h4>
-                                            <span>Finance Advisor</span>
+                                            <h4 className="title"><Link href="/team-details">Shashank Pandey</Link></h4>
+                                            <span>Director</span>
                                         </div>
                                     </div>
                                 </div>
@@ -176,8 +176,8 @@ export default function About() {
                                             <SocialToggle />
                                         </div>
                                         <div className="team-content-three">
-                                            <h4 className="title"><Link href="/team-details">Ronald Richards</Link></h4>
-                                            <span>Finance Advisor</span>
+                                            <h4 className="title"><Link href="/team-details">Mayank Pandey</Link></h4>
+                                            <span>Principal Consultant</span>
                                         </div>
                                     </div>
                                 </div>
@@ -188,8 +188,32 @@ export default function About() {
                                             <SocialToggle />
                                         </div>
                                         <div className="team-content-three">
-                                            <h4 className="title"><Link href="/team-details">Marvin McKinney</Link></h4>
-                                            <span>Finance Advisor</span>
+                                            <h4 className="title"><Link href="/team-details">Chetan P Khurana</Link></h4>
+                                            <span>Associate Consultant</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                                    <div className="team-item-three">
+                                        <div className="team-thumb-three">
+                                            <img src="/assets/img/team/h3_team_img04.png" alt="" />
+                                            <SocialToggle />
+                                        </div>
+                                        <div className="team-content-three">
+                                            <h4 className="title"><Link href="/team-details">Avnika Sharma</Link></h4>
+                                            <span>Associate Consultant</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                                    <div className="team-item-three">
+                                        <div className="team-thumb-three">
+                                            <img src="/assets/img/team/h3_team_img04.png" alt="" />
+                                            <SocialToggle />
+                                        </div>
+                                        <div className="team-content-three">
+                                            <h4 className="title"><Link href="/team-details">Mamoor Ahmed Khan</Link></h4>
+                                            <span>Associate Consultant</span>
                                         </div>
                                     </div>
                                 </div>
