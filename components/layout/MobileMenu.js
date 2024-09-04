@@ -5,7 +5,7 @@ export default function MobileMenu() {
     const router = useRouter();
 
     const isActive = (pathname) => router.pathname === pathname;
-    {/** 
+    {/**
         const [isActive, setIsActive] = useState({
             status: false,
             key: "",
@@ -29,13 +29,13 @@ export default function MobileMenu() {
             <ul className="navigation">
                 <li className={isActive("/") ? "active" : ""}><Link href="/">Home</Link></li>
                 <li className={isActive("/services") ? "active" : ""}><Link href="/services">Services</Link></li>
-                <li className={isActive("/team-details") ? "active" : ""}><Link href="/team-details">Team</Link></li>
+                <li className={isActive("/team") ? "active" : ""}><Link href="/team">Team</Link></li>
                 <li className={isActive("/queries") ? "active" : ""}><Link href="/queries">Queries</Link></li>
                 <li className={isActive("/careers") ? "active" : ""}><Link href="/careers">Careers</Link></li>
                 <li className={isActive("/about") ? "active" : ""}><Link href="/about">About Us</Link></li>
                 <li className={isActive("/contact") ? "active" : ""}><Link href="/contact">Contact Us</Link></li>
 
-                {/** 
+                {/**
                 <li className="active menu-item-has-children"><Link href="/">Home</Link>
                     <ul className="sub-menu" style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
                         <li><Link href="/">Finance</Link></li>
@@ -76,7 +76,7 @@ export default function MobileMenu() {
                             </ul>
                             <div className={isActive.key == 6 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(6)}><span className="fas fa-angle-down" /></div></li>
                         <li><Link href="/project-details">Portfolio Details</Link></li>
-                        <li><Link href="/team-details">Team Details</Link></li>
+                        <li><Link href="/team">Team Details</Link></li>
                         <li><Link href="/error">404 Error</Link></li>
                     </ul>
                     <div className={isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(3)}><span className="fas fa-angle-down" /></div></li>

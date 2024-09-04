@@ -152,7 +152,7 @@ export default function About() {
                                             <SocialToggle />
                                         </div>
                                         <div className="team-content-three">
-                                            <h4 className="title"><Link href="/team-details">Vinit Kumar Sharma</Link></h4>
+                                            <h4 className="title"><Link href="/team">Vinit Kumar Sharma</Link></h4>
                                             <span>Director</span>
                                         </div>
                                     </div>
@@ -164,7 +164,7 @@ export default function About() {
                                             <SocialToggle />
                                         </div>
                                         <div className="team-content-three">
-                                            <h4 className="title"><Link href="/team-details">Shashank Pandey</Link></h4>
+                                            <h4 className="title"><Link href="/team">Shashank Pandey</Link></h4>
                                             <span>Director</span>
                                         </div>
                                     </div>
@@ -176,7 +176,7 @@ export default function About() {
                                             <SocialToggle />
                                         </div>
                                         <div className="team-content-three">
-                                            <h4 className="title"><Link href="/team-details">Mayank Pandey</Link></h4>
+                                            <h4 className="title"><Link href="/team">Mayank Pandey</Link></h4>
                                             <span>Principal Consultant</span>
                                         </div>
                                     </div>
@@ -188,7 +188,7 @@ export default function About() {
                                             <SocialToggle />
                                         </div>
                                         <div className="team-content-three">
-                                            <h4 className="title"><Link href="/team-details">Chetan P Khurana</Link></h4>
+                                            <h4 className="title"><Link href="/team">Chetan P Khurana</Link></h4>
                                             <span>Associate Consultant</span>
                                         </div>
                                     </div>
@@ -200,7 +200,7 @@ export default function About() {
                                             <SocialToggle />
                                         </div>
                                         <div className="team-content-three">
-                                            <h4 className="title"><Link href="/team-details">Avnika Sharma</Link></h4>
+                                            <h4 className="title"><Link href="/team">Avnika Sharma</Link></h4>
                                             <span>Associate Consultant</span>
                                         </div>
                                     </div>
@@ -212,7 +212,7 @@ export default function About() {
                                             <SocialToggle />
                                         </div>
                                         <div className="team-content-three">
-                                            <h4 className="title"><Link href="/team-details">Mamoor Ahmed Khan</Link></h4>
+                                            <h4 className="title"><Link href="/team">Mamoor Ahmed Khan</Link></h4>
                                             <span>Associate Consultant</span>
                                         </div>
                                     </div>

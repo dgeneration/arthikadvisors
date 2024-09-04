@@ -7,6 +7,7 @@ export default function Team() {
                 <div className="team-shape">
                     <img src="/assets/img/team/team_shape.png" alt="" data-aos="fade-right" data-aos-delay={200} />
                 </div>
+
                 <div className="container">
                     <div className="row align-items-center justify-content-center">
                         <div className="col-lg-6">
@@ -21,11 +22,12 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
+
                     <div className="row justify-content-center">
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                             <div className="team-item-two">
                                 <div className="team-thumb-two">
-                                    <Link href="/team-details"><img src="/assets/img/team/h2_team_img01.jpg" alt="" /></Link>
+                                    <Link href="/team"><img src="/assets/img/team/h2_team_img01.jpg" alt="" /></Link>
                                     <div className="team-social-two">
                                         <ul className="list-wrap">
                                             <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -36,7 +38,7 @@ export default function Team() {
                                     </div>
                                 </div>
                                 <div className="team-content-two">
-                                    <h2 className="title"><Link href="/team-details">Vinit Kumar Sharma</Link></h2>
+                                    <h2 className="title"><Link href="/team">Vinit Kumar Sharma</Link></h2>
                                     <span>Director</span>
                                 </div>
                             </div>
@@ -44,7 +46,7 @@ export default function Team() {
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                             <div className="team-item-two">
                                 <div className="team-thumb-two">
-                                    <Link href="/team-details"><img src="/assets/img/team/h2_team_img02.jpg" alt="" /></Link>
+                                    <Link href="/team"><img src="/assets/img/team/h2_team_img02.jpg" alt="" /></Link>
                                     <div className="team-social-two">
                                         <ul className="list-wrap">
                                             <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -55,15 +57,16 @@ export default function Team() {
                                     </div>
                                 </div>
                                 <div className="team-content-two">
-                                    <h2 className="title"><Link href="/team-details">Shashank Pandey</Link></h2>
+                                    <h2 className="title"><Link href="/team">Shashank Pandey</Link></h2>
                                     <span>Director</span>
                                 </div>
                             </div>
                         </div>
+
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                             <div className="team-item-two">
                                 <div className="team-thumb-two">
-                                    <Link href="/team-details"><img src="/assets/img/team/h2_team_img03.jpg" alt="" /></Link>
+                                    <Link href="/team"><img src="/assets/img/team/h2_team_img03.jpg" alt="" /></Link>
                                     <div className="team-social-two">
                                         <ul className="list-wrap">
                                             <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -74,7 +77,7 @@ export default function Team() {
                                     </div>
                                 </div>
                                 <div className="team-content-two">
-                                    <h2 className="title"><Link href="/team-details">Mayank Pandey</Link></h2>
+                                    <h2 className="title"><Link href="/team">Mayank Pandey</Link></h2>
                                     <span>Principal Consultant</span>
                                 </div>
                             </div>
@@ -82,7 +85,7 @@ export default function Team() {
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                             <div className="team-item-two">
                                 <div className="team-thumb-two">
-                                    <Link href="/team-details"><img src="/assets/img/team/h2_team_img04.jpg" alt="" /></Link>
+                                    <Link href="/team"><img src="/assets/img/team/h2_team_img04.jpg" alt="" /></Link>
                                     <div className="team-social-two">
                                         <ul className="list-wrap">
                                             <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -93,18 +96,16 @@ export default function Team() {
                                     </div>
                                 </div>
                                 <div className="team-content-two">
-                                    <h2 className="title"><Link href="/team-details">Chetan P Khurana</Link></h2>
+                                    <h2 className="title"><Link href="/team">Chetan P Khurana</Link></h2>
                                     <span>Associate Consultant</span>
                               </div>
                             </div>
                         </div>
-
-
 
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                             <div className="team-item-two">
                                 <div className="team-thumb-two">
-                                    <Link href="/team-details"><img src="/assets/img/team/h2_team_img04.jpg" alt="" /></Link>
+                                    <Link href="/team"><img src="/assets/img/team/h2_team_img04.jpg" alt="" /></Link>
                                     <div className="team-social-two">
                                         <ul className="list-wrap">
                                             <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -115,17 +116,16 @@ export default function Team() {
                                     </div>
                                 </div>
                                 <div className="team-content-two">
-                                    <h2 className="title"><Link href="/team-details">Avnika Sharma</Link></h2>
+                                    <h2 className="title"><Link href="/team">Avnika Sharma</Link></h2>
                                     <span>Associate Consultant</span>
                               </div>
                             </div>
                         </div>
-
 
                         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                             <div className="team-item-two">
                                 <div className="team-thumb-two">
-                                    <Link href="/team-details"><img src="/assets/img/team/h2_team_img04.jpg" alt="" /></Link>
+                                    <Link href="/team"><img src="/assets/img/team/h2_team_img04.jpg" alt="" /></Link>
                                     <div className="team-social-two">
                                         <ul className="list-wrap">
                                             <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -136,16 +136,16 @@ export default function Team() {
                                     </div>
                                 </div>
                                 <div className="team-content-two">
-                                    <h2 className="title"><Link href="/team-details">Mamoor Ahmed Khan</Link></h2>
+                                    <h2 className="title"><Link href="/team">Mamoor Ahmed Khan</Link></h2>
                                     <span>Associate Consultant</span>
                               </div>
                             </div>
                         </div>
-
 
                     </div>
                 </div>
             </section>
+
             <section className="end-section">
                 <div className="col-lg-6">
                     <div className="section-title-two mb-45 tg-heading-subheading animation-style3">
