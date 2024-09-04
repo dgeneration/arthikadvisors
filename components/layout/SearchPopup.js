@@ -12,7 +12,7 @@ export default function SearchPopup({ isSearch, handleSearch }) {
                             <div className="col-12">
                                 <h2 className="title">... Search Here ...</h2>
                                 <div className="search-form">
-                                    <form action="#">
+                                    <form action="#" name="search" id="search">
                                         <input type="text" name="search" placeholder="Type keywords here" />
                                         <button className="search-btn"><i className="fas fa-search" /></button>
                                     </form>

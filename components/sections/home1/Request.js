@@ -14,21 +14,21 @@ export default function Request() {
                         </div>
                         <div className="col-lg-6">
                             <div className="request-form-wrap">
-                                <form action="#">
+                                <form action="#" name="request" id="request">
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="form-grp">
-                                                <input type="text" placeholder="Name *" />
+                                                <input type="text" id="name" placeholder="Name *" />
                                             </div>
                                         </div>
                                         <div className="col-md-6">
                                             <div className="form-grp">
-                                                <input type="email" placeholder="E-mail *" />
+                                                <input type="email" id="email" placeholder="E-mail *" />
                                             </div>
                                         </div>
                                         <div className="col-md-6">
                                             <div className="form-grp">
-                                                <input type="number" placeholder="Phone *" />
+                                                <input type="number" id="phone" placeholder="Phone *" />
                                             </div>
                                         </div>
                                         <div className="col-md-6">

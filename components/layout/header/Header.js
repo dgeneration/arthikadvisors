@@ -91,8 +91,8 @@ export default function Header({ scroll, isMobileMenu, handleMobileMenu, isSearc
                                             <Link href="/"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
                                         </div>
                                         <div className="mobile-search">
-                                            <form action="#">
-                                                <input type="text" placeholder="Search here..." />
+                                            <form action="#" name="search" id="search" >
+                                                <input type="text" id="search" placeholder="Search here..." />
                                                 <button><i className="flaticon-search" /></button>
                                             </form>
                                         </div>

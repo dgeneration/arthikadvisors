@@ -63,8 +63,8 @@ export default function Footer() {
                                         <h4 className="fw-title">Subscribe to Our Newsletter</h4>
                                         <div className="footer-newsletter">
                                             <p>Sign up to Privitar’s weekly newsletter to get the latest updates.</p>
-                                            <form action="#">
-                                                <input type="email" placeholder="enter your e-mail" />
+                                            <form action="#" id="newsletter" name="newsletter" >
+                                                <input type="email" autocomplete="email" id="email" placeholder="enter your e-mail" />
                                                 <button type="submit">Subscribe</button>
                                             </form>
                                             <span>We don’t send you any spam</span>

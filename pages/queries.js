@@ -53,7 +53,7 @@ export default function Contact() {
                     <section className="banner-area-two banner-bg-two queries-section" data-background="/assets/img/banner/h2_banner_bg.jpg">
                         <div className="features-item queries-outer-div">
                             <form action='https://forms.zohopublic.in/adminhet1/form/ServiceRequest/formperma/itEFuL95oJTEy844YcjMpf-ZeQuYu1ogZx1JlSzZlYg/htmlRecords/submit' name='form' id='form' method='POST' acceptCharset='UTF-8' encType='multipart/form-data' autoComplete="on" target="_blank">
-                                
+
                                 {/**Page 1 */}
 
                                     <div className={currentStep === 1 ? '' : 'div-hide'}>
@@ -64,12 +64,14 @@ export default function Contact() {
                                             <h6>Name</h6>
                                             <div className="queries-form-name">
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">First Name*</label>
-                                                    <input className="queries-form-input" id="given-name" autoComplete="given-name" type="text" maxLength="255" name="Name_First" placeholder="" required/>
+                                                    <label className="queries-form-label">First Name*
+                                                        <input className="queries-form-input" id="given-name" autoComplete="given-name" type="text" maxLength="255" name="Name_First" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Last Name*</label>
-                                                    <input className="queries-form-input" id="family-name" autoComplete="family-name" type="text" maxLength="255" name="Name_Last" placeholder="" required/>
+                                                    <label className="queries-form-label">Last Name*
+                                                        <input className="queries-form-input" id="family-name" autoComplete="family-name" type="text" maxLength="255" name="Name_Last" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
@@ -77,84 +79,96 @@ export default function Contact() {
                                             <h6>Firm Details</h6>
                                             <div className="queries-form-name">
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Firm Name*</label>
-                                                    <input className="queries-form-input" id="organization" autoComplete="organization" type="text" maxLength="255" name="SingleLine" placeholder="" required/>
+                                                    <label className="queries-form-label">Firm Name*
+                                                        <input className="queries-form-input" id="organization" autoComplete="organization" type="text" maxLength="255" name="SingleLine" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                             </div>
                                             <br/>
                                             <div className="queries-form-name">
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Street Address*</label>
-                                                    <input className="queries-form-input" id="address-line1" autoComplete="address-line1" type="text" maxLength="255" name="Address_AddressLine1" placeholder="" required/>
+                                                    <label className="queries-form-label">Street Address*
+                                                        <input className="queries-form-input" id="address-line1" autoComplete="address-line1" type="text" maxLength="255" name="Address_AddressLine1" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Address Line 2</label>
-                                                    <input className="queries-form-input" id="address-line2" autoComplete="address-line2" type="text" maxLength="255" name="Address_AddressLine2" placeholder="" />
-                                                </div>
-                                            </div>
-                                            <div className="queries-form-name">
-                                                <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">City*</label>
-                                                    <input className="queries-form-input" id="address-level2" autoComplete="address-level2" type="text" maxLength="255" name="Address_City" placeholder="" required/>
-                                                </div>
-                                                <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">State/Region/Province*</label>
-                                                    <input className="queries-form-input" id="address-level1" autoComplete="address-level1" type="text" maxLength="255" name="Address_Region" placeholder="" required/>
+                                                    <label className="queries-form-label">Address Line 2
+                                                        <input className="queries-form-input" id="address-line2" autoComplete="address-line2" type="text" maxLength="255" name="Address_AddressLine2" placeholder="" />
+                                                    </label>
                                                 </div>
                                             </div>
                                             <div className="queries-form-name">
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Postal / Zip Code*</label>
-                                                    <input className="queries-form-input" id="postal-code" autoComplete="postal-code" type="text" maxLength="255" name="Address_ZipCode" placeholder="" required/>
+                                                    <label className="queries-form-label">City*
+                                                        <input className="queries-form-input" id="address-level2" autoComplete="address-level2" type="text" maxLength="255" name="Address_City" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Country*</label>
-                                                    <input className="queries-form-input" id="country-name" autoComplete="country-name" type="text" maxLength="255" name="Address_Country" placeholder="" required/>
+                                                    <label className="queries-form-label">State/Region/Province*
+                                                        <input className="queries-form-input" id="address-level1" autoComplete="address-level1" type="text" maxLength="255" name="Address_Region" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                             </div>
-                                            <br/>
                                             <div className="queries-form-name">
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Email*</label>
-                                                    <input className="queries-form-input" id="email" autoComplete="email" type="email" maxLength="255" name="Email" placeholder="" required/>
+                                                    <label className="queries-form-label">Postal / Zip Code*
+                                                        <input className="queries-form-input" id="postal-code" autoComplete="postal-code" type="text" maxLength="255" name="Address_ZipCode" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Mobile Number*</label>
-                                                    <input className="queries-form-input" id="tel" autoComplete="tel" type="tel" maxLength="255" name="PhoneNumber_countrycode" placeholder="" required/>
+                                                    <label className="queries-form-label">Country*
+                                                        <input className="queries-form-input" id="country-name" autoComplete="country-name" type="text" maxLength="255" name="Address_Country" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                             </div>
                                             <br/>
                                             <div className="queries-form-name">
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Type of Business*</label>
-                                                    <select name="Dropdown" className="queries-form-input" required>
-                                                        <option className="queries-form-input" value="Manufacturer">Manufacturer</option>
-                                                        <option className="queries-form-input" value="Service">Service</option>
-                                                        <option className="queries-form-input" value="Traders">Traders</option>
-                                                    </select>
+                                                    <label className="queries-form-label">Email*
+                                                        <input className="queries-form-input" id="email" autoComplete="email" type="email" maxLength="255" name="Email" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Old Business*</label>
-                                                    <select name="Dropdown1" className="queries-form-input" value={BusinessOption} onChange={handleBusinessChange} required>
-                                                        <option className="queries-form-input" value="Yes">Yes</option>
-                                                        <option className="queries-form-input" value="No">No</option>
-                                                    </select>
+                                                    <label className="queries-form-label">Mobile Number*
+                                                        <input className="queries-form-input" id="tel" autoComplete="tel" type="tel" maxLength="255" name="PhoneNumber_countrycode" placeholder="" required/>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <br/>
+                                            <div className="queries-form-name">
+                                                <div className="queries-form-input-div">
+                                                    <label className="queries-form-label">Type of Business*
+                                                        <select name="Dropdown" className="queries-form-input" required>
+                                                            <option className="queries-form-input" value="Manufacturer">Manufacturer</option>
+                                                            <option className="queries-form-input" value="Service">Service</option>
+                                                            <option className="queries-form-input" value="Traders">Traders</option>
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                                <div className="queries-form-input-div">
+                                                    <label className="queries-form-label">Old Business*
+                                                        <select name="Dropdown1" className="queries-form-input" value={BusinessOption} onChange={handleBusinessChange} required>
+                                                            <option className="queries-form-input" value="Yes">Yes</option>
+                                                            <option className="queries-form-input" value="No">No</option>
+                                                        </select>
+                                                    </label>
                                                 </div>
                                             </div>
                                             <br/>
                                             <div className="queries-form-name queries-form-one-grid">
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Business Description*</label>
-                                                    <textarea className="queries-form-input queries-form-large-input" type="text" maxLength="65535" name="MultiLine" placeholder="" required/>
+                                                    <label className="queries-form-label">Business Description*
+                                                        <textarea className="queries-form-input queries-form-large-input" type="text" maxLength="65535" name="MultiLine" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                             </div>
                                             <br/>
                                             <button type="button" className="btn small-btn" onClick={nextStep}>Next</button>
                                         </div>
                                     </div>
-                                
+
                                 {/**Page 2 */}
-                                
+
                                     <div className={currentStep === 2 ? '' : 'div-hide'}>
                                         <button type="button" className="back-button" onClick={prevStep}>Back</button>
                                         <br/>
@@ -162,69 +176,79 @@ export default function Contact() {
                                         <div className="queries-form-div-section">
                                             <div className="queries-form-name">
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Amount of Term Loan*</label>
-                                                    <input className="queries-form-input" type="text" maxLength="50" name="Currency" placeholder="" required/>
+                                                    <label className="queries-form-label">Amount of Term Loan*
+                                                        <input className="queries-form-input" type="text" maxLength="50" name="Currency" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Rate of Interest*</label>
-                                                    <input className="queries-form-input" type="text" maxLength="50" name="SingleLine1" placeholder="" required/>
+                                                    <label className="queries-form-label">Rate of Interest*
+                                                        <input className="queries-form-input" type="text" maxLength="50" name="SingleLine1" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="queries-form-div-section">
                                             <div className="queries-form-name">
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Tenure*</label>
-                                                    <select name="Dropdown3" className="queries-form-input" value={TenureOption} onChange={handleTenureChange} required>
-                                                        <option className="queries-form-input" value="1&#x20;Year">1 Year</option>
-                                                        <option className="queries-form-input" value="3&#x20;Year">3 Year</option>
-                                                        <option className="queries-form-input" value="5&#x20;Year">5 Year</option>
-                                                        <option className="queries-form-input" value="7&#x20;Year">7 Year</option>
-                                                        <option className="queries-form-input" value="Other">Other</option>
-                                                    </select>
+                                                    <label className="queries-form-label">Tenure*
+                                                        <select name="Dropdown3" className="queries-form-input" value={TenureOption} onChange={handleTenureChange} required>
+                                                            <option className="queries-form-input" value="1&#x20;Year">1 Year</option>
+                                                            <option className="queries-form-input" value="3&#x20;Year">3 Year</option>
+                                                            <option className="queries-form-input" value="5&#x20;Year">5 Year</option>
+                                                            <option className="queries-form-input" value="7&#x20;Year">7 Year</option>
+                                                            <option className="queries-form-input" value="Other">Other</option>
+                                                        </select>
+                                                    </label>
                                                 </div>
                                                 {TenureOption === 'Other' && (
                                                     <div className="queries-form-input-div">
-                                                        <label className="queries-form-label">Enter Tenure*</label>
-                                                        <input className="queries-form-input" type="text" maxLength="50" value={customOption} onChange={handleCustomOptionChange} placeholder="" />
+                                                        <label className="queries-form-label">Enter Tenure*
+                                                            <input className="queries-form-input" type="text" maxLength="50" value={customOption} onChange={handleCustomOptionChange} placeholder="" />
+                                                        </label>
                                                     </div>
                                                 )}
                                             </div>
                                             <br/>
                                             <div className="queries-form-name">
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Amount of CC/OD*</label>
-                                                    <input className="queries-form-input" type="text" maxLength="50" name="Currency1" placeholder="" required/>
+                                                    <label className="queries-form-label">Amount of CC/OD*
+                                                        <input className="queries-form-input" type="text" maxLength="50" name="Currency1" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Loan Type*</label>
-                                                    <select name="Radio" className="queries-form-input" value={LoanOption} onChange={handleLoanChange} required>
-                                                        <option className="queries-form-input" value="New">New</option>
-                                                        <option className="queries-form-input" value="Renewal">Renewal</option>
-                                                    </select>
+                                                    <label className="queries-form-label">Loan Type*
+                                                        <select name="Radio" className="queries-form-input" value={LoanOption} onChange={handleLoanChange} required>
+                                                            <option className="queries-form-input" value="New">New</option>
+                                                            <option className="queries-form-input" value="Renewal">Renewal</option>
+                                                        </select>
+                                                    </label>
                                                 </div>
                                             </div>
                                             <div className="queries-form-name">
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">New Limit*</label>
-                                                    <input className="queries-form-input" type="text" maxLength="50" name="Currency3" placeholder="" required/>
+                                                    <label className="queries-form-label">New Limit*
+                                                        <input className="queries-form-input" type="text" maxLength="50" name="Currency3" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                                 {LoanOption === 'Renewal' && (
                                                     <div className="queries-form-input-div">
-                                                        <label className="queries-form-label">Existing Limit*</label>
-                                                        <input className="queries-form-input" type="text" maxLength="50" name="Currency2" placeholder="" required/>
+                                                        <label className="queries-form-label">Existing Limit*
+                                                            <input className="queries-form-input" type="text" maxLength="50" name="Currency2" placeholder="" required/>
+                                                        </label>
                                                     </div>
                                                 )}
                                             </div>
                                             <br/>
                                             <div className="queries-form-name">
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Bank Name*</label>
-                                                    <input className="queries-form-input" type="text" maxLength="255" name="SingleLine2" placeholder="" required/>
+                                                    <label className="queries-form-label">Bank Name*
+                                                        <input className="queries-form-input" type="text" maxLength="255" name="SingleLine2" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                                 <div className="queries-form-input-div">
-                                                    <label className="queries-form-label">Bank Branch Name*</label>
-                                                    <input className="queries-form-input" type="text" maxLength="255" name="SingleLine3" placeholder="" required/>
+                                                    <label className="queries-form-label">Bank Branch Name*
+                                                        <input className="queries-form-input" type="text" maxLength="255" name="SingleLine3" placeholder="" required/>
+                                                    </label>
                                                 </div>
                                             </div>
                                             <br/>
