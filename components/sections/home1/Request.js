@@ -18,17 +18,17 @@ export default function Request() {
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="form-grp">
-                                                <input type="text" id="name" placeholder="Name *" />
+                                                <input type="text" id="name" autoComplete="name" placeholder="Name *" />
                                             </div>
                                         </div>
                                         <div className="col-md-6">
                                             <div className="form-grp">
-                                                <input type="email" id="email" placeholder="E-mail *" />
+                                                <input type="email" id="email" autoComplete="email" placeholder="E-mail *" />
                                             </div>
                                         </div>
                                         <div className="col-md-6">
                                             <div className="form-grp">
-                                                <input type="number" id="phone" placeholder="Phone *" />
+                                                <input type="number" id="phone" autoComplete="phone" placeholder="Phone *" />
                                             </div>
                                         </div>
                                         <div className="col-md-6">

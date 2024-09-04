@@ -255,20 +255,27 @@ export default function Contact() {
                                             <h6>Upload Documents</h6>
                                             <div className="queries-form-name">
                                                 <div className="queries-form-input-div queries-form-upload-div">
-                                                    <input className="queries-form-input" type="file" name="FileUpload" checktype="c1"  multiple="multiple" required/>
-                                                    <label className="queries-form-label">Pan, Aadhar, GST Regn/ Udyam Aadhar</label>
+                                                    <label className="queries-form-label">
+                                                        <input className="queries-form-input" type="file" name="FileUpload" checktype="c1"  multiple="multiple" required/>
+                                                        Pan, Aadhar, GST Regn/ Udyam Aadhar
+                                                    </label>
                                                 </div>
                                                 {BusinessOption === 'Yes' && (
                                                 <div className="queries-form-input-div queries-form-upload-div">
-                                                    <input className="queries-form-input" type="file" name="FileUpload1" checktype="c1"  multiple="multiple" />
-                                                    <label className="queries-form-label">Last Year Balance Sheet</label>
+                                                    <label className="queries-form-label">
+                                                        <input className="queries-form-input" type="file" name="FileUpload1" checktype="c1"  multiple="multiple" />
+                                                        Last Year Balance Sheet
+                                                    </label>
                                                 </div>
                                                 )}
                                             </div>
                                             <br/>
                                             <div className="queries-form-name queries-form-one-grid">
                                                 <div className="queries-form-input-div queries-form-term-div">
-                                                    <input className="queries-form-term-checkbox" name="TermsConditions" type="checkbox" required /><label>I accept the Terms and Conditions.</label>
+                                                    <label>
+                                                        <input className="queries-form-term-checkbox" name="TermsConditions" type="checkbox" required />
+                                                        I accept the Terms and Conditions.
+                                                    </label>
                                                 </div>
                                             </div>
                                             <br />
