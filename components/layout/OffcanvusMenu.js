@@ -17,21 +17,13 @@ export default function OffcanvusMenu({ isOffcanvus, handleOffcanvus }) {
                     </div>
                     <div className="contact-list mb-30">
                         <h4>Phone Number</h4>
-                        <p>+91-6396377079</p>
+                        <p><Link href="tel:6396377079">+91-6396377079</Link></p>
                     </div>
                     <div className="contact-list mb-30">
                         <h4>Email Address</h4>
-                        <p>info.arthik@gmail.com</p>
+                        <p><Link href="mailto:info.arthik@gmail.com">info.arthik@gmail.com</Link></p>
                     </div>
                 </div>
-                <ul className="side-instagram list-wrap">
-                    <li><Link href="#"><img src="/assets/img/images/sb_insta01.jpg" alt="" /></Link></li>
-                    <li><Link href="#"><img src="/assets/img/images/sb_insta02.jpg" alt="" /></Link></li>
-                    <li><Link href="#"><img src="/assets/img/images/sb_insta03.jpg" alt="" /></Link></li>
-                    <li><Link href="#"><img src="/assets/img/images/sb_insta04.jpg" alt="" /></Link></li>
-                    <li><Link href="#"><img src="/assets/img/images/sb_insta05.jpg" alt="" /></Link></li>
-                    <li><Link href="#"><img src="/assets/img/images/sb_insta06.jpg" alt="" /></Link></li>
-                </ul>
                 <div className="social-icon-right mt-30">
                     <Link href="#"><i className="fab fa-facebook-f" /></Link>
                     <Link href="#"><i className="fab fa-twitter" /></Link>
