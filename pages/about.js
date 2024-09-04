@@ -133,6 +133,7 @@ export default function About() {
                     </section>
                     {/* features-area-end */}
                     {/* team-area */}
+                    {/*
                     <section className="team-area-three">
                         <div className="container">
                             <div className="row justify-content-center">
@@ -220,6 +221,7 @@ export default function About() {
                             </div>
                         </div>
                     </section>
+                    */}
                     {/* team-area-end */}
                     {/* testimonial-area */}
                     <section className="testimonial-area testimonial-bg" data-background="/assets/img/bg/testimonial_bg.jpg">

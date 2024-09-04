@@ -20,7 +20,7 @@ export default function Home1() {
                 <About />
                 <Services />
                 <Overview />
-                <Team />
+                {/*<Team />*/}
                 <Request />
             </Layout>
         </>

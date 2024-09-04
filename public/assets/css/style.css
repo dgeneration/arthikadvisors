@@ -3368,10 +3368,12 @@ label {
 
 .overview-content .info-one {
     margin-bottom: 15px;
+    display: flex;
 }
 
 .overview-content .info-two {
     margin-bottom: 30px;
+    display: flex;
 }
 
 .overview-content .content-bottom .list-wrap {
@@ -9979,7 +9981,7 @@ input::file-selector-button{
     @media (min-width: 992px) {
         width: 35% !important;
     }
-    
+
 }
 
 .end-section {
@@ -10004,4 +10006,19 @@ input::file-selector-button{
     border-radius: 50px;
     padding: 4px 13px;
     margin-bottom: 12px;
+}
+
+.overview-content i {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--tg-primary-color);
+    color: var(--tg-white);
+    border-radius: 50%;
+    font-size: 12px;
+    margin-right: 8px;
+    flex: 0 0 auto;
+    margin-top: 2px;
 }

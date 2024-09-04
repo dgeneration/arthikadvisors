@@ -43,17 +43,20 @@ export default function Footer() {
                                 </div>
                                 <div className="col-lg-2 col-md-5 col-sm-6">
                                     <div className="footer-widget">
-                                        <h4 className="fw-title">Menu</h4>
+                                        <h4 className="fw-title">Quick Links</h4>
                                         <div className="footer-link">
                                             <ul className="list-wrap">
                                                 <li><Link href="/about">Company</Link></li>
                                                 <li><Link href="/careers">Careers</Link></li>
                                                 <li><Link href="/contact">Contact Us</Link></li>
-                                                <li><Link href="/services">services</Link></li>
+                                                <li><Link href="/services">Services</Link></li>
                                                 <li><Link href="/contact">Privacy Policy</Link></li>
                                             </ul>
                                         </div>
                                     </div>
+                                </div>
+                                <div className="col-lg-2 col-md-5 col-sm-6">
+
                                 </div>
                                 <div className="col-lg-4 col-md-7">
                                     <div className="footer-widget">
