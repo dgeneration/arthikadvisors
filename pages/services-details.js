@@ -18,9 +18,9 @@ export default function ServiceDetails() {
         finance: (
             <>
                 <div className="services-details-content">
-                    <h2 className="title">Accounting & Bookkeeping</h2>
+                    <h2 className="title">ACCOUNTING & BOOKKEEPING</h2>
                     <div className="services-details-thumb">
-                        <img src="/assets/img/services/services_details01.jpg" alt="" />
+                        <img src="/assets/img/services/service_details-1.png" alt="" />
                     </div>
                     <br/>
                     <section id="1">
@@ -663,7 +663,7 @@ export default function ServiceDetails() {
                 <div className="services-details-content">
                     <h2 className="title">MANAGEMENT CONSULTING</h2>
                     <div className="services-details-thumb">
-                        <img src="/assets/img/services/services_details01.jpg" alt="" />
+                        <img src="/assets/img/services/services_details02.jpg" alt="" />
                     </div>
                     <p>Our Management Consulting services are designed to help businesses navigate complex challenges, enhance performance, and achieve their strategic goals. With a focus on tailored solutions, we provide expert guidance and support in business planning, decision-making, and process improvement.</p>
                     <br/>
@@ -913,7 +913,7 @@ export default function ServiceDetails() {
                 <div className="services-details-content">
                     <h2 className="title">INCORPORATION AND REGISTRATION SERVICES</h2>
                     <div className="services-details-thumb">
-                        <img src="/assets/img/services/services_details01.jpg" alt="" />
+                        <img src="/assets/img/services/services_details03.jpg" alt="" />
                     </div>
                     <p>Our Incorporation and Registration Services provide comprehensive support for businesses and organizations looking to establish themselves legally and compliantly in India. From company formation to various statutory registrations, we ensure a seamless and hassle-free experience.</p>
                     <br/>
@@ -1395,7 +1395,7 @@ export default function ServiceDetails() {
                 <div className="services-details-content">
                     <h2 className="title">TAXATION MANAGEMENT & PLANNING</h2>
                     <div className="services-details-thumb">
-                        <img src="/assets/img/services/services_details01.jpg" alt="" />
+                        <img src="/assets/img/services/services_details05.jpg" alt="" />
                     </div>
 
                     <p>Effective tax management and planning are crucial for minimizing tax liabilities and ensuring compliance with applicable laws. Our services provide comprehensive tax solutions tailored to your business needs, ensuring optimal tax efficiency.</p>
