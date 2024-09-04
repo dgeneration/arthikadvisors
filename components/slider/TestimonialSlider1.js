@@ -80,7 +80,7 @@ export default function TestimonialSlider1() {
                         <p>“ Morem ipsum dolor sit amet, consectetur adipiscing elita florai sum dolor sit amet, consecteture.Borem ipsum dolor sit amet, consectetur adipiscing elita Moremsit amet.</p>
                         <div className="testimonial-info">
                             <h4 className="title">Mr.Robey Alexa</h4>
-                            <span>CEO, Gerow Agency</span>
+                            <span>CEO, AAPL</span>
                         </div>
                     </div>
                 </div>
@@ -101,7 +101,7 @@ export default function TestimonialSlider1() {
                         <p>“ Morem ipsum dolor sit amet, consectetur adipiscing elita florai sum dolor sit amet, consecteture.Borem ipsum dolor sit amet, elita Moremsit amet.</p>
                         <div className="testimonial-info">
                             <h4 className="title">Guy Hawkins</h4>
-                            <span>CEO, Gerow Agency</span>
+                            <span>CEO, AAPL</span>
                         </div>
                     </div>
                 </div>

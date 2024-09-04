@@ -10,7 +10,7 @@ export default function Services() {
                         <div className="row justify-content-center">
                             <div className="col-xl-6 col-lg-8 col-md-10">
                                 <div className="section-title-two text-center mb-50">
-                                    <h2 className="title">Our Services</h2>
+                                    <h2 className="title">Services We Provide</h2>
                                     <p></p>
                                 </div>
                             </div>

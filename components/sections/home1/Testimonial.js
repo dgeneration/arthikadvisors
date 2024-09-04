@@ -65,7 +65,7 @@ export default function Testimonial() {
                         <div className="col-lg-7">
                             <div className="section-title-two white-title text-center mb-50 tg-heading-subheading animation-style3">
                                 <span className="sub-title">Our Testimonials</span>
-                                <h2 className="title tg-element-title">What Customers Say’s About Our Gerow Services</h2>
+                                <h2 className="title tg-element-title">What Customers Say’s About Our AAPL Services</h2>
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ export default function Testimonial() {
                                             </div>
                                             <div className="avatar-info">
                                                 <h2 className="title">Mr.Robey Alexa</h2>
-                                                <span>CEO, Gerow Agency</span>
+                                                <span>CEO, AAPL</span>
                                             </div>
                                         </div>
                                     </div>
@@ -111,7 +111,7 @@ export default function Testimonial() {
                                             </div>
                                             <div className="avatar-info">
                                                 <h2 className="title">Robert Fox</h2>
-                                                <span>CEO, Gerow Agency</span>
+                                                <span>CEO, AAPL</span>
                                             </div>
                                         </div>
                                     </div>
@@ -134,7 +134,7 @@ export default function Testimonial() {
                                             </div>
                                             <div className="avatar-info">
                                                 <h2 className="title">Mr.Robey Alexa</h2>
-                                                <span>CEO, Gerow Agency</span>
+                                                <span>CEO, AAPL</span>
                                             </div>
                                         </div>
                                     </div>

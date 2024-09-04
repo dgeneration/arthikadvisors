@@ -224,6 +224,7 @@ export default function About() {
                     */}
                     {/* team-area-end */}
                     {/* testimonial-area */}
+                    {/*
                     <section className="testimonial-area testimonial-bg" data-background="/assets/img/bg/testimonial_bg.jpg">
                         <div className="container">
                             <div className="row align-items-center justify-content-center">
@@ -247,6 +248,7 @@ export default function About() {
                             </div>
                         </div>
                     </section>
+                    */}
                     {/* testimonial-area-end */}
                 </div>
             </Layout>

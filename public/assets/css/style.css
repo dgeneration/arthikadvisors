@@ -10022,3 +10022,19 @@ input::file-selector-button{
     flex: 0 0 auto;
     margin-top: 2px;
 }
+
+.services-details-area .sub-title {
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    font-size: 1.73rem;
+    display: inline-block;
+    color: var(--tg-primary-color);
+    background: var(--tg-lavender);
+    border-radius: 50px;
+    padding: 4px 13px;
+    margin-bottom: 12px;
+}
+
+.sub-service-details {
+    margin-left: 20px;
+}
