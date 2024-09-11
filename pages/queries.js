@@ -138,7 +138,7 @@ export default function Contact() {
                                             <div className="queries-form-name">
                                                 <div className="queries-form-input-div">
                                                     <label className="queries-form-label">Type of Business*
-                                                        <select name="Dropdown" className="queries-form-input" required>
+                                                        <select name="Dropdown1" className="queries-form-input" required>
                                                             <option className="queries-form-input" value="Manufacturer">Manufacturer</option>
                                                             <option className="queries-form-input" value="Service">Service</option>
                                                             <option className="queries-form-input" value="Traders">Traders</option>
@@ -147,7 +147,7 @@ export default function Contact() {
                                                 </div>
                                                 <div className="queries-form-input-div">
                                                     <label className="queries-form-label">Old Business*
-                                                        <select name="Dropdown1" className="queries-form-input" value={BusinessOption} onChange={handleBusinessChange} required>
+                                                        <select name="Dropdown2" className="queries-form-input" value={BusinessOption} onChange={handleBusinessChange} required>
                                                             <option className="queries-form-input" value="Yes">Yes</option>
                                                             <option className="queries-form-input" value="No">No</option>
                                                         </select>
