@@ -52,7 +52,7 @@ export default function Contact() {
                 <div>
                     <section className="banner-area-two banner-bg-two queries-section" data-background="/assets/img/banner/h2_banner_bg.jpg">
                         <div className="features-item queries-outer-div">
-                            <form action='https://forms.zohopublic.in/adminhet1/form/ServiceRequest/formperma/itEFuL95oJTEy844YcjMpf-ZeQuYu1ogZx1JlSzZlYg/htmlRecords/submit' name='form' id='form' method='POST' acceptCharset='UTF-8' encType='multipart/form-data' autoComplete="on" target="_blank">
+                            <form action='https://forms.zohopublic.in/arthikadvisors1/form/ProjectReportService/formperma/Whu0LWIVu7e32dfUVcIj4BoGOvzUjJJ9lD3njjgPuAE/htmlRecords/submit' name='form' id='form' method='POST' acceptCharset='UTF-8' encType='multipart/form-data' autoComplete="on" target="_blank">
 
                                 {/**Page 1 */}
 
