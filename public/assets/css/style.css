@@ -297,6 +297,9 @@ label {
     padding-left: 15px;
     padding-right: 15px;
 }
+.content-top-center {
+    justify-content: center;
+}
 
 .row {
     --bs-gutter-x: 30px;
@@ -4337,6 +4340,10 @@ label {
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 25px;
+
+    .img {
+        width: 100%;
+    }
 }
 
 .services-thumb::before {

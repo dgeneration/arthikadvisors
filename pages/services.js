@@ -19,7 +19,7 @@ export default function Services() {
                             <div className="col-lg-4 custom-width col-md-6 col-sm-10">
                                 <div className="services-item">
                                     <div className="services-content">
-                                        <div className="content-top">
+                                        <div className="content-top content-top-center">
                                             <div className="icon">
                                                 <i className="flaticon-briefcase" />
                                             </div>
@@ -40,7 +40,7 @@ export default function Services() {
                             <div className="col-lg-4 custom-width col-md-6 col-sm-10">
                                 <div className="services-item">
                                     <div className="services-content">
-                                        <div className="content-top">
+                                        <div className="content-top content-top-center">
                                             <div className="icon">
                                                 <i className="flaticon-taxes" />
                                             </div>
@@ -61,7 +61,7 @@ export default function Services() {
                             <div className="col-lg-4 custom-width col-md-6 col-sm-10">
                                 <div className="services-item">
                                     <div className="services-content">
-                                        <div className="content-top">
+                                        <div className="content-top content-top-center">
                                             <div className="icon">
                                                 <i className="flaticon-money" />
                                             </div>
@@ -82,7 +82,7 @@ export default function Services() {
                             <div className="col-lg-4 custom-width col-md-6 col-sm-10">
                                 <div className="services-item">
                                     <div className="services-content">
-                                        <div className="content-top">
+                                        <div className="content-top content-top-center">
                                             <div className="icon">
                                                 <i className="flaticon-investment" />
                                             </div>
