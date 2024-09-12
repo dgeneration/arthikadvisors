@@ -55,22 +55,6 @@ export default function Footer() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-2 col-md-5 col-sm-6">
-
-                                </div>
-                                <div className="col-lg-4 col-md-7">
-                                    <div className="footer-widget">
-                                        <h4 className="fw-title">Subscribe to Our Newsletter</h4>
-                                        <div className="footer-newsletter">
-                                            <p>Sign up to Privitar’s weekly newsletter to get the latest updates.</p>
-                                            <form action="#" id="newsletter" name="newsletter" >
-                                                <input type="email" autoComplete="email" id="email" placeholder="enter your e-mail" />
-                                                <button type="submit">Subscribe</button>
-                                            </form>
-                                            <span>We don’t send you any spam</span>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div className="footer-bottom">
