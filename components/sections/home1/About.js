@@ -26,7 +26,6 @@ export default function About() {
                                         <li><i className="fas fa-arrow-right" />100% Better results</li>
                                         <li><i className="fas fa-arrow-right" />Client-Centric Approach</li>
                                         <li><i className="fas fa-arrow-right" />Commitment to Excellence</li>
-                                        <li><i className="fas fa-arrow-right" />Review Credit Reports</li>
                                     </ul>
                                 </div>
                                 <p>Our mission is to provide innovative and tailored solutions that drive business success and growth.</p>
