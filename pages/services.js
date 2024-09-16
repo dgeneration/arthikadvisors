@@ -30,9 +30,9 @@ export default function Services() {
                                             <Link href="/services-details?content=finance" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
-                                            <li>Accounting Services</li>
-                                            <li>Virtual CFO Services</li>
-                                            <li>Project Report & CMA Preparation</li>
+                                            <li><Link href="/services-details?content=finance#1">Accounting Services</Link></li>
+                                            <li><Link href="/services-details?content=finance#3">Virtual CFO Services</Link></li>
+                                            <li><Link href="/services-details?content=finance#5">Project Report & CMA Preparation</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -51,9 +51,9 @@ export default function Services() {
                                             <Link href="/services-details?content=management" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
-                                            <li>Business Planning</li>
-                                            <li>Business Decision-Making Support</li>
-                                            <li>Business Process Improvement</li>
+                                            <li><Link href="/services-details?content=management#1">Business Planning</Link></li>
+                                            <li><Link href="/services-details?content=management#2">Business Decision-Making Support</Link></li>
+                                            <li><Link href="/services-details?content=management#3">Business Process Improvement</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -72,9 +72,9 @@ export default function Services() {
                                             <Link href="/services-details?content=incorporation" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
-                                            <li>Company Formation</li>
-                                            <li>Trust/Society/Firm Formation</li>
-                                            <li>GST Registration</li>
+                                            <li><Link href="/services-details?content=incorporation#1">Company Formation</Link></li>
+                                            <li><Link href="/services-details?content=incorporation#2">Trust/Society/Firm Formation</Link></li>
+                                            <li><Link href="/services-details?content=incorporation#3">GST Registration</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -93,9 +93,9 @@ export default function Services() {
                                             <Link href="/services-details?content=taxation" className="btn transparent-btn">Our Services</Link>
                                         </div>
                                         <ul className="list-wrap">
-                                            <li>Taxation Management & Planning</li>
-                                            <li>Monthly & Yearly Compliances</li>
-                                            <li>Tax System Trainings</li>
+                                            <li><Link href="/services-details?content=taxation">Taxation Management & Planning</Link></li>
+                                            <li><Link href="/services-details?content=taxation#1">Monthly & Yearly Compliances</Link></li>
+                                            <li><Link href="/services-details?content=taxation#2">Tax System Trainings</Link></li>
                                         </ul>
                                     </div>
                                 </div>
