@@ -1659,12 +1659,60 @@ export default function ServiceDetails() {
                                 <div className="col-29">
                                     <aside className="services-sidebar">
                                         <div className="services-cat-list mb-30">
-                                            <ul className="list-wrap">
-                                                <li className={content === "finance" ? "active" : ""}><Link href="?finance" onClick={() => setContent("finance")}>Finance & Accounting <i className="flaticon-right-arrow" /></Link></li>
-                                                <li className={content === "management" ? "active" : ""}><Link href="?management" onClick={() => setContent("management")}>Management Consulting <i className="flaticon-right-arrow" /></Link></li>
-                                                <li className={content === "incorporation" ? "active" : ""}><Link href="?incorporation" onClick={() => setContent("incorporation")}>Incorporation & Registration <i className="flaticon-right-arrow" /></Link></li>
-                                                <li className={content === "taxation" ? "active" : ""}><Link href="?taxation" onClick={() => setContent("taxation")}>Taxation & Complianc <i className="flaticon-right-arrow" /></Link></li>
-                                            </ul>
+                                        <ul className="list-wrap">
+                                            <li className={content === "finance" ? "active" : ""}>
+                          <Link
+                            href={{
+                              pathname: router.pathname,
+                              query: { content: "finance" },
+                            }}
+                            onClick={() => setContent("finance")}
+                          >
+                            Finance & Accounting{" "}
+                            <i className="flaticon-right-arrow" />
+                          </Link>
+                                            </li>
+                                            <li
+                          className={content === "management" ? "active" : ""}
+                        >
+                          <Link
+                            href={{
+                              pathname: router.pathname,
+                              query: { content: "management" },
+                            }}
+                            onClick={() => setContent("management")}
+                          >
+                            Management Consulting{" "}
+                            <i className="flaticon-right-arrow" />
+                          </Link>
+                                            </li>
+                                            <li
+                          className={content === "incorporation" ? "active" : ""}
+                        >
+                          <Link
+                            href={{
+                              pathname: router.pathname,
+                              query: { content: "incorporation" },
+                            }}
+                            onClick={() => setContent("incorporation")}
+                          >
+                            Incorporation & Registration{" "}
+                            <i className="flaticon-right-arrow" />
+                          </Link>
+                                            </li>
+                                            <li className={content === "taxation" ? "active" : ""}>
+                          <Link
+                            href={{
+                              pathname: router.pathname,
+                              query: { content: "taxation" },
+                            }}
+                            onClick={() => setContent("taxation")}
+                          >
+                            Taxation & Compliance{" "}
+                            <i className="flaticon-right-arrow" />
+                          </Link>
+                                            </li>
+                                        </ul>
                                         </div>
                                         {/**
                                         <div className="services-widget">
